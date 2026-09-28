@@ -907,7 +907,7 @@ const S = {
   weather:'pluie', occasion:'entretien', daySeed:0, forceItem:null, log:seedLog(W0),
   // Cabine
   cabMode:'style', photo:null, style:'streetwear', look:null, generating:false, secondHand:false,
-  avatar:null, budget:2, budgetMax:null, variant:1, cut:50, pending:false, lang:'fr', taste:{}, tasteN:0, locks:[], fresh:false,
+  avatar:null, budget:2, budgetMax:null, variant:1, cut:25, pending:false, lang:'fr', taste:{}, tasteN:0, locks:[], fresh:false,
   // Dressing
   wardrobe:W0, wfilter:'all', outfits:[], imported:[],
   // Mix
@@ -1184,7 +1184,7 @@ function renderCabine(){
       <button class="round nope" data-action="swipe" data-v="-1" aria-label="Pas pour moi">${I.x}</button>
       <div class="cmp" role="group" aria-label="Comparer">
         <button data-action="cmp" data-v="100" id="cmpB">Avant</button>
-        <button data-action="cmp" data-v="50" id="cmpC">Comparer</button>
+        <button data-action="cmp" data-v="25" id="cmpC">Comparer</button>
         <button data-action="cmp" data-v="0" id="cmpA">Après</button></div>
       <button class="round like" data-action="swipe" data-v="1" aria-label="J'aime">${I.heartF}</button></div>
     ${S.tasteN<2 ? `<p class="hint center">Glisse l'image : à droite j'aime, à gauche suivant. Tire la poignée verte pour comparer.</p>` : ''}
@@ -1845,7 +1845,7 @@ function generate(){
     const st = styleById(S.style);
     S.variant = (S.look && S.look.styleId===st.id) ? (S.variant||1)+1 : 1;
     S.look = {label:st.name, styleId:st.id, items: makeVariant(st.id, S.look && S.look.styleId===st.id ? lookKey(S.look) : null)};
-    S.generating = false; S.fresh = true; S.cut = 50; render();
+    S.generating = false; S.fresh = true; S.cut = 25; render();
     document.getElementById('stage')?.scrollIntoView({behavior:'smooth',block:'start'});
   }, 1700);
 }
@@ -1855,7 +1855,7 @@ function saveLook(look){
   else { S.saved.unshift({key,label:look.label,styleId:look.styleId,items:look.items.map(i=>({...i}))}); toast('Look enregistré dans ton profil'); }
   save();
 }
-function tryOn(look){ S.fresh=true; S.cut=50; S.pending=false; S.look = {label:look.label, styleId:look.styleId, items:look.items.map(i=>({...i}))}; if(look.styleId) S.style=look.styleId; go('cabine'); setTimeout(()=>document.getElementById('stage')?.scrollIntoView({behavior:'smooth',block:'start'}),60); }
+function tryOn(look){ S.fresh=true; S.cut=25; S.pending=false; S.look = {label:look.label, styleId:look.styleId, items:look.items.map(i=>({...i}))}; if(look.styleId) S.style=look.styleId; go('cabine'); setTimeout(()=>document.getElementById('stage')?.scrollIntoView({behavior:'smooth',block:'start'}),60); }
 function createPoll(a, q){
   let b = S.saved.find(s=>s.key!==lookKey(a));
   if(!b){ const other = shuffle(STYLES.filter(s=>s.id!==a.styleId))[0]; b = {label:other.name, styleId:other.id, items:buildLook(other.id)}; }
@@ -1924,7 +1924,7 @@ function swipeDecision(dir){
   if(dir>0 && !isSaved(look)){ S.saved.unshift({key:lookKey(look),label:look.label,styleId:look.styleId,items:look.items.map(i=>({...i}))}); }
   S.variant = (S.variant||1)+1;
   S.look = {label:look.label, styleId:look.styleId, items: makeVariant(look.styleId, lookKey(look))};
-  S.fresh = true; S.enterDir = dir; S.cut = 50; save(); render();
+  S.fresh = true; S.enterDir = dir; S.cut = 25; save(); render();
   toast(dir>0 ? 'Aimé et enregistré, je t\'en propose plus comme ça' : 'Noté, voici une autre variante');
 }
 
