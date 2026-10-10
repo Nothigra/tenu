@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#7B3FE4">
-<meta name="description" content="Tenu : ton dressing, ton style, tes tenues. Essayage IA, tenue du jour et dressing partagé.">
+<meta name="description" content="Tenu : le plus beau vêtement est celui qui existe déjà. Porter, partager et faire durer ses vêtements, sans rien acheter de neuf.">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -443,6 +443,56 @@ nav.tabs .badge{position:absolute;top:2px;left:calc(50% + 10px);min-width:16px;h
 .langs button b{font-family:var(--display);font-size:14px;font-weight:500;color:var(--mauve)}
 .langs button span{font-size:12px;font-weight:700}
 .langs button[aria-checked="true"]{border-color:var(--mauve);background:var(--mauve-soft)}
+
+/* ---------- Durabilité ---------- */
+.eco{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:18px;background:var(--lime-soft);border:1px solid color-mix(in srgb,var(--lime) 45%,var(--line));text-align:left}
+.eco > svg{width:22px;height:22px;flex:none;color:var(--lime-ink);margin-top:1px}
+.eco b{display:block;font-size:14px;color:var(--text)}
+.eco span{display:block;font-size:12.5px;color:var(--muted);margin-top:2px;line-height:1.4}
+.eco.sm{padding:9px 12px;border-radius:14px}
+.eco.sm > svg{width:18px;height:18px}
+.eco.sm b{font-size:13px}
+.eco.big{padding:16px;border-radius:22px}
+.eco.big b{font-family:var(--display);font-weight:500;font-size:15px}
+.eco-pill svg:first-child{color:var(--lime-ink);opacity:1!important}
+.eco-chip svg{color:var(--lime-ink)!important}
+.used{font-size:11px;font-weight:800;color:var(--lime-ink);background:var(--lime-soft);padding:3px 7px;border-radius:7px;white-space:nowrap}
+.impact-card{padding:18px;border-radius:24px;background:linear-gradient(150deg,var(--lime-soft),var(--surface) 75%);border:1px solid color-mix(in srgb,var(--lime) 50%,var(--line));display:flex;flex-direction:column;gap:10px}
+.impact-card .big{font-family:var(--display);font-size:40px;font-weight:700;letter-spacing:-.03em;color:var(--lime-ink);line-height:1;font-variant-numeric:tabular-nums}
+.impact-card .big small{font-size:16px;font-weight:500}
+.impact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:4px}
+.impact-grid div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 12px;min-width:0}
+.impact-grid b{display:block;font-family:var(--display);font-size:20px;font-weight:500;font-variant-numeric:tabular-nums}
+.impact-grid span{font-size:10.5px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.challenge{display:flex;flex-direction:column;gap:8px;padding:12px 14px;border-radius:16px;border:1px solid var(--line);background:var(--surface)}
+.challenge .top{display:flex;justify-content:space-between;gap:8px;font-size:14px}
+.challenge .top span{color:var(--muted);font-weight:700;font-variant-numeric:tabular-nums}
+.progress{height:8px;border-radius:9px;background:var(--surface2);overflow:hidden}
+.progress i{display:block;height:100%;background:var(--lime);border-radius:9px}
+.keep{display:flex;flex-direction:column;gap:10px;padding:12px;border-radius:18px;border:1px solid var(--line);background:var(--surface)}
+.keep .row1{display:flex;gap:12px;align-items:center}
+.keep .info b{display:block;font-size:14px}
+.keep .info span{font-size:12px;color:var(--muted)}
+.keep .acts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.keep .acts button{display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 2px;border-radius:12px;border:1px solid var(--line);background:var(--surface2);font-size:11px;font-weight:700;transition:background-color .2s}
+.keep .acts button svg{width:18px;height:18px;color:var(--mauve)}
+.keep .acts button[aria-pressed="true"]{background:var(--lime-soft);border-color:color-mix(in srgb,var(--lime) 50%,var(--line))}
+.tile .box .lend{position:absolute;right:6px;bottom:6px;width:22px;height:22px;border-radius:8px;background:var(--lime);color:var(--on-lime);display:grid;place-items:center}
+.tile .box .lend svg{width:13px;height:13px}
+.pause-card{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:22px 18px;border-radius:22px;background:var(--surface);box-shadow:var(--shadow);max-width:290px;border:1px solid var(--line)}
+.pause-card > svg{width:34px;height:34px;color:var(--lime-ink)}
+.pause-card b{font-family:var(--display);font-weight:500;font-size:17px}
+.pause-card p{margin:0;font-size:13px;color:var(--muted)}
+.pause-card .btn{width:100%}
+.mission{font-family:var(--display);font-weight:700;font-size:19px;line-height:1.3;letter-spacing:-.01em;margin:0;color:var(--mauve)}
+.values{display:flex;flex-direction:column;gap:8px}
+.values div{display:flex;gap:10px;align-items:baseline;font-size:13px}
+.values b{flex:none;width:96px}
+.values span{color:var(--muted)}
+.card.troc{display:flex;flex-direction:column;gap:8px;background:var(--mauve-soft);border-color:transparent}
+.card.troc .btn{align-self:flex-start}
+.trio{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:4px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--lime-ink);animation:rise .7s 1s both}
+.trio i{width:5px;height:5px;border-radius:50%;background:var(--lime)}
 /* ---------- Écran d'accueil ---------- */
 .intro{position:fixed;top:0;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:440px;z-index:100;background:var(--bg);color:var(--text);overflow:hidden;display:flex;justify-content:center;
   clip-path:circle(150% at 50% 82%);transition:clip-path .75s cubic-bezier(.7,0,.2,1)}
@@ -627,6 +677,11 @@ const I = {
   camera: sv('<path d="M4 8h3l1.6-2.5h6.8L17 8h3v11H4Z"/><circle cx="12" cy="13" r="3.5"/>'),
   dots: sv('<circle cx="5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="19" cy="12" r="1.3"/>','stroke-width="2.4"'),
   down: sv('<path d="m6 9 6 6 6-6"/>','stroke-width="2.2"'),
+  leaf: sv('<path d="M5 19c0-8.5 6-14 15-14 0 9-6 15-14.5 15"/><path d="M5 19c3.5-4.5 6.5-6.5 10.5-8.5"/>'),
+  walk: sv('<circle cx="13.5" cy="4.5" r="1.8"/><path d="m10 21 2.2-6.2-2.4-2.6 1-5.2 3.4 2.2 3 .8M12.4 12.3l3.1 2.9 1 5.8M9.8 7.4 7 9.2l-.8 3.8"/>'),
+  wrench: sv('<path d="M14.7 6.3a4 4 0 0 0-5.3 5.3L4 17l3 3 5.4-5.4a4 4 0 0 0 5.3-5.3l-2.6 2.6-2.4-.4-.4-2.4Z"/>'),
+  pin: sv('<path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.3"/>'),
+  gift: sv('<rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M3 9h18M12 9v11M12 9c-2-4-6.5-4-6.5-1.6S9.5 9 12 9Zm0 0c2-4 6.5-4 6.5-1.6S14.5 9 12 9Z"/>'),
   x: sv('<path d="M6 6l12 12M18 6 6 18"/>','stroke-width="2.6"'),
   unlock: sv('<rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 7.7-1.5"/>'),
   lock: sv('<rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/>'),
@@ -717,14 +772,6 @@ const CAT = {
     bottom:[['Pantalon fluide noir','H&M',24.99,'#141416','H&M'],['Pantalon simili cuir','Zara',45.95,'#111114','Zara'],['Pantalon large satiné','Mango',49.99,'#5B2C8F','Zalando']],
     shoes:[['Bottines à talon noires','H&M',39.99,'#111114','H&M'],['Mocassins vernis','Zara',55.95,'#0E0E10','Zara'],['Bottines cuir','Steve Madden',110,'#111114','Zalando'],['Chelsea boots noires','Dr. Martens',189,'#111113','Zalando']]}},
 };
-/* Paliers de prix par type de pièce : au-dessus de T1 = moyen, au-dessus de T2 = cher */
-const T1 = {top:25,outer:50,bottom:35,shoes:50,acc:20}, T2 = {top:60,outer:120,bottom:80,shoes:120,acc:50};
-const tierOf = i => i.price<=T1[i.type] ? 1 : i.price<=T2[i.type] ? 2 : 3;
-const BUDGETS = {
-  1:{label:'Petit prix',sym:'€',cap:130,desc:'Pièces abordables, tenue sous ~130 €'},
-  2:{label:'Moyen',sym:'€€',cap:320,desc:'Marques courantes, tenue sous ~320 €'},
-  3:{label:'Plaisir',sym:'€€€',cap:Infinity,desc:'Sans limite, pièces de marque incluses'},
-};
 const STYLES = Object.entries(CAT).map(([id,s]) => {
   const slots = {};
   Object.entries(s.slots).forEach(([type,arr]) => { slots[type] = arr.map(([name,brand,price,color,shop,shape]) => it(type,name,brand,price,color,shop,{tags:[id],...(shape?{shape}:{})})); });
@@ -733,6 +780,41 @@ const STYLES = Object.entries(CAT).map(([id,s]) => {
 const styleById = id => STYLES.find(s => s.id === id);
 const allCatalog = () => STYLES.flatMap(s=>Object.values(s.slots).flat());
 const styleSwatch = s => ['top','bottom','shoes'].map(t=>s.slots[t][0].color);
+
+/* ===== Autour de toi (données de démo) : voisins, friperies solidaires, seconde main en ligne ===== */
+/* kg CO2e d'un vêtement neuf, valeurs ADEME (impactco2.fr) pour le type le plus proche :
+   t-shirt coton 6,43 · jean 25,1 · chaussures cuir 15. Vestes comptées comme un jean (prudent). */
+const CO2 = {top:6.43, outer:25.1, bottom:25.1, shoes:15, acc:0};
+const NEIGHBORS = [
+  {id:'n1',name:'Camille',hue:'#FFD9A8',handle:'Voisine'},
+  {id:'n2',name:'Malik',hue:'#B9E6C9',handle:'Voisin'},
+  {id:'n3',name:'Zoé',hue:'#C9D7FF',handle:'Voisine'},
+  {id:'n4',name:'Hugo',hue:'#F7C6E0',handle:'Voisin'},
+  {id:'n5',name:'Aya',hue:'#E9DFC8',handle:'Voisine'},
+];
+const SHOPS = {
+  s1:{name:'Friperie solidaire Le Fil',walk:9},
+  s2:{name:'Ressourcerie du quartier',walk:14},
+};
+const REPAIRERS = [
+  {name:'Atelier Fil & Aiguille',kind:'Retouches, ourlets, fermetures',walk:7},
+  {name:'Cordonnerie du Marché',kind:'Semelles, talons, cuir',walk:11},
+  {name:'Repair Café du quartier',kind:'Gratuit · 1er samedi du mois',walk:13},
+];
+const RELAYS = [
+  {name:'Boulangerie du coin',hours:'7h–19h',walk:4},
+  {name:'Bibliothèque du campus',hours:'9h–20h',walk:8},
+  {name:'Salle de sport Move',hours:'7h–22h',walk:12},
+];
+const hashStr = s => { let h = 7; for(const c of s) h = (h*31 + c.charCodeAt(0)) | 0; return Math.abs(h); };
+allCatalog().forEach(i => {
+  const h = hashStr(i.name + i.brand), r = h % 10;
+  if(r < 5){ const n = NEIGHBORS[(h >> 4) % NEIGHBORS.length]; i.src='voisin'; i.fid=n.id; i.owner=n.name; i.walk = 3 + (h >> 7) % 20; }
+  else if(r < 8){ const sid = r===7 ? 's2' : 's1'; i.src='friperie'; i.shopId=sid; i.walk=SHOPS[sid].walk; i.used=Math.max(3, Math.round(i.price*.3)); }
+  else { i.src='vinted'; i.used=Math.max(4, Math.round(i.price*.4)); }
+});
+NEIGHBORS.forEach(n => n.items = allCatalog().filter(i=>i.fid===n.id));
+
 /* Goûts appris : chaque « j'aime » / « pas pour moi » ajuste le poids des pièces */
 const taste = i => Math.max(-3, Math.min(3, (S.taste && S.taste[i.name]) || 0));
 function wpick(list){
@@ -742,63 +824,57 @@ function wpick(list){
   for(let k=0;k<pool.length;k++){ r-=ws[k]; if(r<=0) return pool[k]; }
   return pool[pool.length-1];
 }
-function pickIn(list, budget){
-  let allowed = list.filter(i=>tierOf(i)<=budget);
-  if(!allowed.length) allowed = [[...list].sort((a,b)=>a.price-b.price)[0]];
-  return wpick(allowed.map(i=>({...i,_w: tierOf(i)===budget ? 2 : 1})));
-}
-const sumOf = items => items.reduce((a,i)=>a+i.price,0);
 const rnd = arr => arr[Math.floor(Math.random()*arr.length)];
 const keyOf = items => items.map(i=>i.name).sort().join('|');
 const clean = i => { const c={...i}; delete c._w; return c; };
-/* Une variante : les pièces verrouillées (fixed) sont gardées, le reste est tiré au sort */
-function draft(st, pick, fixed){
-  const fx = t => fixed.find(f=>f.type===t);
-  const items = ['top','bottom','shoes'].map(t=> fx(t) || clean(pick(st.slots[t])));
-  ['outer','acc'].forEach(t=>{ if(fx(t)) items.push(fx(t)); else if(st.slots[t] && Math.random()<(t==='outer'?.6:.5)) items.push(clean(pick(st.slots[t]))); });
-  return items;
-}
-const trim = (items, cap, fixed) => { ['acc','outer'].forEach(t=>{ if(sumOf(items)>cap) items = items.filter(i=>i.type!==t || fixed.includes(i)); }); return items; };
-/* Génère une variante de tenue pour un style et un budget, différente de la précédente si possible */
-function buildLook(styleId, budget=S.budget, avoidKey=null, max=S.budgetMax, fixed=[]){
-  const st = styleById(styleId);
-  if(max) return buildUnder(st, max, avoidKey, fixed);
-  let items, tries = 0;
-  do{ items = trim(draft(st, l=>pickIn(l,budget), fixed), BUDGETS[budget].cap, fixed); tries++; }
-  while(avoidKey && keyOf(items)===avoidKey && tries<14);
-  return items;
-}
-/* Mode montant exact : on tire beaucoup de combinaisons et on garde celles sous le plafond */
-function buildUnder(st, max, avoidKey, fixed=[]){
-  const ok = [];
-  for(let n=0;n<180;n++){
-    const items = trim(draft(st, wpick, fixed), max, fixed);
-    if(sumOf(items)<=max && keyOf(items)!==avoidKey) ok.push(items);
-  }
-  if(!ok.length){
-    budgetTooLow = true;
-    const fx = t => fixed.find(f=>f.type===t);
-    return [...['top','bottom','shoes'].map(t=> fx(t) || {...[...st.slots[t]].sort((a,b)=>a.price-b.price)[0]}), ...fixed.filter(f=>f.type==='outer'||f.type==='acc')];
-  }
-  budgetTooLow = false;
-  const good = ok.filter(x=>sumOf(x)>=max*.55);
-  return rnd(good.length ? good : ok);
-}
+const paidTotal = items => items.reduce((a,i)=>a+(i.owned||i.friend||i.src==='voisin' ? 0 : (i.used||0)),0);
+const lookCO2 = items => items.reduce((a,i)=>a+(CO2[i.type]||0),0);
 let budgetTooLow = false;
-const fitsBudget = i => S.budgetMax ? i.price<=S.budgetMax : tierOf(i)<=S.budget;
-const budgetLabel = () => S.budgetMax ? `Max ${euro(S.budgetMax)}` : BUDGETS[S.budget].label;
+const budgetLabel = () => S.budgetMax ? `Max ${euro(S.budgetMax)}` : 'Sans limite';
 
-/* Pièces polyvalentes candidates pour les « achats malins » */
-const BASICS = [
-  it('bottom','Pantalon droit beige','Uniqlo',39.9,'#CDB892','Zalando',{tags:['oldmoney','business','minimal']}),
-  it('shoes','Sneakers cuir blanches','Veja',140,'#F2F2F0','Zalando',{tags:['streetwear','minimal','y2k','oldmoney']}),
-  it('top','Pull col rond bleu marine','Arket',69,'#1F2A44','Zalando',{tags:['oldmoney','business','minimal']}),
-  it('outer','Trench beige','Mango',119.99,'#BFA57E','Zalando',{tags:['oldmoney','business','minimal']}),
-  it('bottom','Jean large noir','Levi\'s',110,'#18181C','Zalando',{tags:['streetwear','y2k','minimal','soiree']}),
-  it('shoes','Chelsea boots noires','Dr. Martens',189,'#111113','Zalando',{tags:['soiree','minimal','business','techwear']}),
-  it('top','Chemise oxford blanche','Uniqlo',34.9,'#F7F7F4','Zalando',{tags:['oldmoney','business','minimal','soiree']}),
-  it('outer','Veste coach noire','Carhartt WIP',129,'#16161A','Zalando',{tags:['streetwear','techwear','minimal']}),
-];
+/* Aperçu d'un style (accueil, choix du style, sondages) : pièces du catalogue */
+function buildLook(styleId){
+  const st = styleById(styleId);
+  const items = ['top','bottom','shoes'].map(t=>clean(rnd(st.slots[t])));
+  if(st.slots.outer && Math.random()<.6) items.push(clean(rnd(st.slots.outer)));
+  if(st.slots.acc && Math.random()<.5) items.push(clean(rnd(st.slots.acc)));
+  return items;
+}
+/* D'où peut venir une pièce : ton dressing d'abord, puis tes amis, tes voisins, la seconde main. Jamais de neuf. */
+const SRC_W = {mine:6, ami:4, voisin:3, friperie:1.4, vinted:1};
+function candidates(styleId, type){
+  const out = [];
+  S.wardrobe.forEach(i=>{ if(i.type===type && (i.tags||[]).includes(styleId)) out.push({...i,_w:SRC_W.mine}); });
+  if(S.src.friends) S.friends.filter(f=>!f.pending && f.theirAccess!=='none').forEach(f=>f.items.forEach(i=>{
+    if(i.type===type && (i.tags||[]).includes(styleId)) out.push({...i,friend:f.name,fid:f.id,src:'ami',_w:SRC_W.ami});
+  }));
+  (styleById(styleId).slots[type]||[]).forEach(i=>{
+    if(i.src==='voisin' && S.src.voisins && i.walk<=S.radius) out.push({...i,_w:SRC_W.voisin});
+    if(i.src==='friperie' && S.src.seconde && i.walk<=S.radius) out.push({...i,_w:SRC_W.friperie});
+    if(i.src==='vinted' && S.src.seconde) out.push({...i,_w:SRC_W.vinted});
+  });
+  return out;
+}
+function makeVariant(styleId, avoidKey){
+  const fixed = S.locks;
+  for(let n=0; n<60; n++){
+    const items = [];
+    for(const t of ['top','bottom','shoes','outer','acc']){
+      const fx = fixed.find(f=>f.type===t);
+      if(fx){ items.push(fx); continue; }
+      if((t==='outer' && Math.random()>.6) || (t==='acc' && Math.random()>.45)) continue;
+      const c = candidates(styleId, t);
+      if(!c.length){ if(['top','bottom','shoes'].includes(t)){ const any=S.wardrobe.filter(i=>i.type===t); if(any.length) items.push(rnd(any)); } continue; }
+      items.push(clean(wpick(c)));
+    }
+    if(S.budgetMax && paidTotal(items) > S.budgetMax) continue;
+    if(avoidKey && keyOf(items)===avoidKey && n<50) continue;
+    budgetTooLow = false;
+    return items;
+  }
+  budgetTooLow = !!S.budgetMax;
+  return ['top','bottom','shoes'].map(t=>S.wardrobe.find(i=>i.type===t)).filter(Boolean);
+}
 
 const OCCASIONS = [
   {id:'quotidien',label:'Quotidien',styles:['streetwear','minimal','y2k']},
@@ -821,19 +897,20 @@ const AGENDA = [
 ];
 
 const own = (type,name,color,tags,extra={}) => ({id:nid(),type,name,color,tags,owned:true,...extra});
+/* paid = prix payé à l'achat, wornBefore = ports avant l'app : sert au coût par port */
 const SAMPLE_WARDROBE = () => [
-  own('top','T-shirt blanc','#F5F5F2',['minimal','streetwear','business','y2k']),
-  own('top','Hoodie noir','#1A1A1E',['streetwear','techwear']),
-  own('top','Chemise en jean','#5C7EA8',['y2k','minimal','oldmoney']),
-  own('outer','Veste en jean','#6D8FBF',['streetwear','y2k']),
-  own('outer','Blazer marine','#1F2A44',['oldmoney','business','soiree']),
-  own('outer','Doudoune sans manches','#16161A',['techwear','gorpcore']),
-  own('bottom','Jean droit brut','#2E3E5C',['minimal','streetwear','oldmoney','y2k']),
-  own('bottom','Jogging gris','#8E8A96',['streetwear','gorpcore']),
-  own('bottom','Chino beige','#CDB892',['oldmoney','business']),
-  own('shoes','Sneakers blanches','#F2F2F2',['streetwear','minimal','y2k','techwear']),
-  own('shoes','Boots marron','#5A3A22',['oldmoney','gorpcore','business']),
-  own('acc','Casquette noire','#18181C',['streetwear','techwear'],{shape:'cap'}),
+  own('top','T-shirt blanc','#F5F5F2',['minimal','streetwear','business','y2k','casual'],{paid:15,wornBefore:52}),
+  own('top','Hoodie noir','#1A1A1E',['streetwear','techwear'],{paid:45,wornBefore:38}),
+  own('top','Chemise en jean','#5C7EA8',['y2k','minimal','oldmoney','casual','vintage'],{paid:35,wornBefore:4}),
+  own('outer','Veste en jean','#6D8FBF',['streetwear','y2k','casual','vintage'],{paid:60,wornBefore:30,lendable:true}),
+  own('outer','Blazer marine','#1F2A44',['oldmoney','business','soiree'],{paid:89,wornBefore:9,lendable:true}),
+  own('outer','Doudoune sans manches','#16161A',['techwear','gorpcore'],{paid:70,wornBefore:2}),
+  own('bottom','Jean droit brut','#2E3E5C',['minimal','streetwear','oldmoney','y2k','casual','vintage'],{paid:59,wornBefore:70}),
+  own('bottom','Jogging gris','#8E8A96',['streetwear','gorpcore'],{paid:25,wornBefore:40}),
+  own('bottom','Chino beige','#CDB892',['oldmoney','business','casual'],{paid:40,wornBefore:18}),
+  own('shoes','Sneakers blanches','#F2F2F2',['streetwear','minimal','y2k','techwear','casual'],{paid:89,wornBefore:120}),
+  own('shoes','Boots marron','#5A3A22',['oldmoney','gorpcore','business','vintage'],{paid:120,wornBefore:14}),
+  own('acc','Casquette noire','#18181C',['streetwear','techwear'],{shape:'cap',paid:20,wornBefore:25}),
 ];
 const fr = (type,name,color,tags,extra={}) => ({id:nid(),type,name,color,tags,...extra});
 const SAMPLE_FRIENDS = () => [
@@ -864,16 +941,6 @@ const SAMPLE_REQUESTS = () => [
     fr('top','Polo marine','#1F2A44',['oldmoney','business']),
     fr('bottom','Chino beige','#CDB892',['oldmoney','business']),
     fr('shoes','Mocassins marron','#5A3A22',['oldmoney'])]}];
-const MAIL_ORDERS = [
-  {shop:'Zalando',date:'12 sept.',items:[
-    {key:'m1',type:'top',name:'Pull col rond bordeaux',color:'#6B1F2E',tags:['oldmoney','minimal']},
-    {key:'m2',type:'shoes',name:'New Balance 550 blanches',color:'#EDEDE8',tags:['streetwear','oldmoney','minimal']}]},
-  {shop:'Vinted',date:'3 sept.',items:[
-    {key:'m3',type:'outer',name:'Veste en velours côtelé',color:'#7A5A3A',tags:['oldmoney','gorpcore']}]},
-  {shop:'ASOS',date:'28 août',items:[
-    {key:'m4',type:'bottom',name:'Jean large noir',color:'#18181C',tags:['streetwear','y2k','minimal','soiree']}]},
-];
-
 /* ================= Dates ================= */
 const pad = n => String(n).padStart(2,'0');
 const iso = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
@@ -898,7 +965,7 @@ function seedLog(w){
 }
 
 /* ================= État ================= */
-const STORE = 'tenu-v3';
+const STORE = 'tenu-v4';
 const sysDark = (() => { try { return matchMedia('(prefers-color-scheme: dark)').matches; } catch(e) { return true; } })();
 const W0 = SAMPLE_WARDROBE();
 const S = {
@@ -906,48 +973,55 @@ const S = {
   // Aujourd'hui
   weather:'pluie', occasion:'entretien', daySeed:0, forceItem:null, log:seedLog(W0),
   // Cabine
-  cabMode:'style', photo:null, style:'streetwear', look:null, generating:false, secondHand:false,
-  avatar:null, budget:2, budgetMax:null, variant:1, cut:25, pending:false, lang:'fr', taste:{}, tasteN:0, locks:[], fresh:false,
+  photo:null, style:'streetwear', look:null, generating:false,
+  avatar:null, budgetMax:null, variant:1, cut:25, pending:false, lang:'fr', taste:{}, tasteN:0, locks:[], fresh:false,
+  src:{friends:true, voisins:true, seconde:true}, radius:15, daily:{date:'',n:0,max:12}, paused:false,
   // Dressing
-  wardrobe:W0, wfilter:'all', outfits:[], imported:[],
-  // Mix
-  mixRatio:50, useMine:false, showItems:false, dtab:'pieces', og:[], openPoll:null,
-  // Amis
+  wardrobe:W0, wfilter:'all', outfits:[],
+  showItems:false, dtab:'pieces', og:[], openPoll:null,
+  // Partage
+  ptab:'amis', troc:false,
   friends:SAMPLE_FRIENDS(), requests:SAMPLE_REQUESTS(), mySharing:{f1:'full',f2:'match',f3:'match'}, defaultShare:'match',
   loans:[], polls:[], group:{members:['f1','f2'],style:'soiree',result:null},
+  // Impact (valeurs de démo de départ) : co2 = kg CO2e évités par rapport à des achats neufs
+  impact:{ressorties:4, prets:3, emprunts:2, reparations:1, occasion:2, dons:1, co2:125},
+  noNewSince: daysAgo(18),
   // Moi
   saved:[], sizes:{top:'M',bottom:'W30 L32',shoes:'42'}, brandNotes:[{brand:'Zara',note:'Prendre une taille au-dessus'}],
-  alerts:[], privacy:{keepPhoto:true,blurFace:true},
+  privacy:{keepPhoto:true,blurFace:true},
   // UI
-  openFriend:null, friendResult:null, draft:null, queue:[], importSel:[],
+  openFriend:null, friendResult:null, draft:null, queue:[],
 };
 S.loans = [
   {id:'l1',dir:'in',fid:'f1',name:'Veste en jean',color:'#6D8FBF',type:'outer',until:inDays(5),status:'pending'},
   {id:'l2',dir:'out',fid:'f2',name:'Cargo olive',color:'#4B5234',type:'bottom',until:inDays(3),status:'ok'},
 ];
 {
-  const a = styleById('streetwear').slots.bottom[2];
-  S.alerts = [{...a, watchedAt:a.price, drop:.15}];
-  const lookA = {label:'Old Money',styleId:'oldmoney',items:buildLook('oldmoney',2)};
-  const lookB = {label:'Business',styleId:'business',items:buildLook('business',2)};
+  const lookA = {label:'Old Money',styleId:'oldmoney',items:buildLook('oldmoney')};
+  const lookB = {label:'Business',styleId:'business',items:buildLook('business')};
   S.polls = [{id:'p1',q:'Pour mon entretien ?',a:lookA,b:lookB,va:1,vb:3,open:true,target:5}];
 }
+const SAVE_KEYS = ['wardrobe','friends','requests','mySharing','defaultShare','saved','photo','log','loans','polls','sizes','brandNotes','privacy','lang','avatar','budgetMax','taste','tasteN','weather','occasion','src','radius','impact','noNewSince','daily','troc'];
 function load(){
   try{
     const d = JSON.parse(localStorage.getItem(STORE) || 'null'); if(!d) return;
     if(d.themeChosen){ S.theme = d.theme; S.themeChosen = true; }
-    ['wardrobe','friends','requests','mySharing','defaultShare','saved','secondHand','photo','log','loans','polls','sizes','brandNotes','alerts','privacy','lang','avatar','budget','budgetMax','taste','tasteN','imported','weather','occasion'].forEach(k => { if(d[k] !== undefined) S[k] = d[k]; });
+    SAVE_KEYS.forEach(k => { if(d[k] !== undefined) S[k] = d[k]; });
   }catch(e){}
 }
 let saveT;
 function save(){ clearTimeout(saveT); saveT = setTimeout(saveNow, 500); }
 function saveNow(){
   clearTimeout(saveT);
-  const keys = ['theme','themeChosen','wardrobe','friends','requests','mySharing','defaultShare','saved','secondHand','log','loans','polls','sizes','brandNotes','alerts','privacy','lang','avatar','budget','budgetMax','taste','tasteN','imported','weather','occasion'];
-  const d = {}; keys.forEach(k => d[k] = S[k]);
+  const d = {theme:S.theme, themeChosen:S.themeChosen}; SAVE_KEYS.forEach(k => d[k] = S[k]);
   d.photo = S.privacy.keepPhoto ? S.photo : null;
   try{ localStorage.setItem(STORE, JSON.stringify(d)); }
   catch(e){ try{ d.photo=null; localStorage.setItem(STORE, JSON.stringify(d)); }catch(_){} }
+}
+function addImpact(kind, type, countCO2=true){
+  S.impact[kind] = (S.impact[kind]||0) + 1;
+  if(countCO2 && type) S.impact.co2 = Math.round((S.impact.co2 + (CO2[type]||0))*10)/10;
+  save();
 }
 
 /* ================= Utilitaires ================= */
@@ -958,14 +1032,7 @@ const hex = ([r,g,b]) => '#'+[r,g,b].map(v=>Math.round(v).toString(16).padStart(
 const cdist = (a,b) => { const x=rgb(a),y=rgb(b); return Math.hypot(x[0]-y[0],x[1]-y[1],x[2]-y[2]); };
 const shuffle = a => a.map(v=>[Math.random(),v]).sort((p,q)=>p[0]-q[0]).map(p=>p[1]);
 const sortItems = arr => [...arr].sort((a,b)=>TYPE_ORDER.indexOf(a.type)-TYPE_ORDER.indexOf(b.type));
-const friendById = id => S.friends.find(f=>f.id===id);
-function shopUrl(item, second){
-  const q = encodeURIComponent(`${item.brand||''} ${item.name}`.trim());
-  if(second) return `https://www.vinted.be/catalog?search_text=${q}`;
-  if(item.shop === 'ASOS') return `https://www.asos.com/fr/search/?q=${q}`;
-  return `https://www.zalando.be/catalogue/?q=${q}`;
-}
-const priceOf = (item, second) => second ? Math.round(item.price * 0.4) : item.price;
+const friendById = id => S.friends.find(f=>f.id===id) || NEIGHBORS.find(n=>n.id===id);
 let toastT;
 function toast(msg){
   const t=document.getElementById('toast'); t.textContent=tr(msg); t.hidden=false; t.classList.remove('out'); void t.offsetWidth; t.classList.add('in');
@@ -1036,32 +1103,37 @@ function pinPos(item, items){
 }
 
 /* ================= Composants ================= */
+const walkTxt = m => `${m} min à pied`;
+const fmtKg = n => n.toLocaleString(LOC(),{maximumFractionDigits:1});
+const vintedUrl = i => `https://www.vinted.be/catalog?search_text=${encodeURIComponent(`${i.brand||''} ${i.name}`.trim())}`;
+const VINTED_SELL = 'https://www.vinted.be/items/new';
+function srcInfo(i){
+  if(i.owned) return {kind:'mine', sub:'ton dressing'};
+  if(i.friend) return {kind:'ami', sub:'chez '+i.friend};
+  if(i.src==='voisin') return {kind:'voisin', sub:`${i.owner} · ${walkTxt(i.walk)}`};
+  if(i.src==='friperie') return {kind:'friperie', sub:`${SHOPS[i.shopId].name} · ${walkTxt(i.walk)}`};
+  return {kind:'vinted', sub:'Vinted · envoi en point relais'};
+}
 function itemRow(item, idx, opts={}){
-  const second = opts.second ?? S.secondHand;
+  const s = srcInfo(item);
   let right;
-  if(item.owned) right = `<span class="own">À toi</span>`;
-  else if(item.friend) right = `<span class="friend-own">${esc(item.friend)}</span>${opts.borrow?`<button class="link" data-action="borrow" data-fid="${item.fid}" data-id="${item.id}">${I.swap}Emprunter</button>`:''}`;
-  else right = `<span class="p">${second?'≈ ':''}${euro(priceOf(item,second))}</span>
-    <a class="link" href="${shopUrl(item,second)}" target="_blank" rel="noopener sponsored">${second?'Vinted':esc(item.shop)} ${I.ext}</a>`;
-  const sub = item.owned ? (TYPES[item.type]+' · ta garde-robe') : item.friend ? (TYPES[item.type]+' · chez '+esc(item.friend)) : `${esc(item.brand)} · ${TYPES[item.type]} · ${'€'.repeat(tierOf(item))}`;
+  if(s.kind==='mine') right = `<span class="own">À toi</span>`;
+  else if(s.kind==='ami') right = `<span class="friend-own">${esc(item.friend)}</span><button class="link" data-action="borrow" data-fid="${item.fid}" data-id="${item.id}">${I.swap}Emprunter</button>`;
+  else if(s.kind==='voisin') right = `<span class="own">Prêt gratuit</span><button class="link" data-action="borrow" data-fid="${item.fid}" data-id="${item.id}">${I.swap}Emprunter</button>`;
+  else if(s.kind==='friperie') right = `<span class="p">≈ ${euro(item.used)}</span><span class="used">Seconde main</span>`;
+  else right = `<span class="p">≈ ${euro(item.used)}</span><a class="link" href="${vintedUrl(item)}" target="_blank" rel="noopener">Vinted ${I.ext}</a>`;
   const lk = opts.lockable ? `<button class="lockbtn" data-action="lock" data-id="${item.id}" aria-pressed="${isLocked(item)}" aria-label="${isLocked(item)?'Libérer':'Garder'} ${esc(item.name)}" title="${isLocked(item)?'Pièce gardée':'Garder cette pièce'}">${isLocked(item)?I.lock:I.unlock}</button>` : '';
   return `<div class="item ${isLocked(item)&&opts.lockable?'is-locked':''}" id="row-${item.id}">
     ${idx!=null?`<span class="n">${idx}</span>`:''}${lk}
     <div class="ico">${thumb(item)}</div>
-    <div class="info"><b>${esc(item.name)}</b><span>${sub}</span></div>
+    <div class="info"><b>${esc(item.name)}</b><span>${TYPES[item.type]} · ${s.sub}</span></div>
     <div class="right">${right}</div></div>`;
 }
-function styleChips(active, action){
-  return `<div class="chips" role="group" aria-label="Styles">${STYLES.map(s=>`
-    <button class="chip" data-action="${action}" data-v="${s.id}" aria-pressed="${s.id===active}">
-      <span class="sw">${styleSwatch(s).map(c=>`<i style="background:${c}"></i>`).join('')}</span>${s.name}</button>`).join('')}</div>`;
-}
-const toBuy = items => items.filter(i=>!i.owned && !i.friend && i.price);
-const toBuyTotal = items => toBuy(items).reduce((a,i)=>a+priceOf(i,S.secondHand),0);
 const isLocked = i => S.locks.some(l=>l.id===i.id);
 const lookKey = look => look.items.map(i=>i.name).sort().join('|');
 const isSaved = look => look && S.saved.some(s=>s.key===lookKey(look));
-const AFF = '';
+const monthWorn = () => S.log.filter(e=>diffDays(e.date,TODAY)<30).length;
+const ecoNote = (title, text, cls='') => `<div class="eco ${cls}">${I.leaf}<div><b>${title}</b>${text?`<span>${text}</span>`:''}</div></div>`;
 
 /* ================= Aujourd'hui ================= */
 function dayOutfit(){
@@ -1087,10 +1159,10 @@ function dayOutfit(){
     items.forEach(i=>{ const d=idleDays(i.id); if(d===Infinity) reasons.push(`${i.name} : jamais portée, c'est le moment.`); else if(d>=14) reasons.push(`${i.name} ressort après ${d} jours.`); });
     return {label:styleById(sid).name, styleId:sid, items, reasons};
   }
-  // Rien de complet : on complète avec des articles à acheter
+  // Il manque une pièce : on la cherche chez un ami ou un voisin, jamais en neuf
   const st = styleById(order[0]);
-  const items = buildLook(st.id).filter(i=>i.type!=='acc').map(tpl => S.wardrobe.find(i=>i.type===tpl.type && (i.tags||[]).includes(st.id)) || {...tpl});
-  return {label:st.name, styleId:st.id, items, reasons:[WEATHER[w].rule,'Il te manque des pièces pour ce style : les articles à acheter sont liés.']};
+  const items = ['top','bottom','shoes'].map(t => S.wardrobe.find(i=>i.type===t && (i.tags||[]).includes(st.id)) || clean(candidates(st.id,t).filter(c=>c.src==='voisin'||c.src==='ami')[0]||{})).filter(i=>i&&i.type);
+  return {label:st.name, styleId:st.id, items, reasons:[WEATHER[w].rule,'Il te manque une pièce : un voisin peut te la prêter.']};
 }
 function renderToday(){
   const d = new Date(), w = WEATHER[S.weather], o = dayOutfit(), items = sortItems(o.items);
@@ -1098,7 +1170,7 @@ function renderToday(){
   const occ = OCCASIONS.find(x=>x.id===S.occasion);
   const worn = S.log.find(e=>e.date===TODAY);
   const isWorn = worn && worn.itemIds.slice().sort().join('|') === items.filter(i=>i.owned).map(i=>i.id).sort().join('|');
-  const toBuyN = items.filter(i=>!i.owned).length;
+  const allMine = items.every(i=>i.owned);
   return `<section class="screen">
     <div class="tbar">
       <div class="tdate">${d.toLocaleDateString(LOC(),{weekday:'long',day:'numeric',month:'long'})}</div>
@@ -1113,16 +1185,16 @@ function renderToday(){
         <div class="eyebrow">Ta tenue du jour</div>
         <div class="hero-title">${esc(o.label)}</div>
         <p class="reason">${I.spark}<span>${esc(o.reasons[1] || o.reasons[0])}</span></p>
-        <div class="piece-chips">${items.map(i=>`<span><i style="background:${i.color}"></i>${esc(i.name)}${i.owned?'':' · à acheter'}</span>`).join('')}</div>
+        <div class="piece-chips">${items.map(i=>`<span><i style="background:${i.color}"></i>${esc(i.name)}${i.owned?'':' · à emprunter'}</span>`).join('')}</div>
       </div>
     </div>
+    ${ecoNote(allMine ? '100 % ton dressing · 0 achat neuf' : 'Ton dressing + un prêt du quartier', `${monthWorn()} tenues portées ce mois-ci sans rien acheter.`)}
     <button class="btn primary" data-action="wear" ${isWorn?'disabled':''}>${I.check}${isWorn?'Portée aujourd\'hui':'Je la porte'}</button>
     <div class="duo">
       <button class="btn" data-action="day-next">${I.shuffle}Autre idée</button>
       <button class="btn" data-action="today-more" aria-label="Plus d'options">${I.dots}Plus</button>
     </div>
     ${S.forceItem ? `<button class="btn sm ghost center" data-action="unforce">Retirer la pièce imposée</button>` : ''}
-    ${toBuyN ? `<p class="hint center">${toBuyN} pièce${toBuyN>1?'s':''} à acheter pour compléter ce look.</p>` : ''}
   </section>`;
 }
 function todaySheet(kind){
@@ -1142,14 +1214,14 @@ function menuSheet(title, rows){
 
 /* ================= Cabine ================= */
 function budgetPicker(){
-  return `<div class="budget" role="radiogroup" aria-label="Budget">${Object.entries(BUDGETS).map(([k,b])=>`<button class="bopt" role="radio" aria-checked="${!S.budgetMax && S.budget===+k}" data-action="budget" data-v="${k}"><b>${b.sym}</b><span>${b.label}</span></button>`).join('')}</div>
-  <form class="exact ${S.budgetMax?'on':''}" id="budgetForm">
-    <label for="budgetMax">Ou un montant précis pour la tenue</label>
-    <div class="exact-row"><div class="money"><input id="budgetMax" type="number" inputmode="numeric" min="20" max="5000" step="5" placeholder="ex. 150" value="${S.budgetMax||''}"><span>€</span></div>
+  return `<form class="exact ${S.budgetMax?'on':''}" id="budgetForm">
+    <label for="budgetMax">Budget maximum pour la seconde main</label>
+    <div class="exact-row"><div class="money"><input id="budgetMax" type="number" inputmode="numeric" min="5" max="1000" step="5" placeholder="ex. 30" value="${S.budgetMax||''}"><span>€</span></div>
       <button class="btn sm mauve" type="submit">Appliquer</button>${S.budgetMax?`<button class="btn sm ghost" type="button" data-action="budget-clear">Retirer</button>`:''}</div>
   </form>
-  <p class="hint">${S.budgetMax ? `Toutes les tenues restent sous ${euro(S.budgetMax)} au total.` : BUDGETS[S.budget].desc+'.'}${budgetTooLow&&S.budgetMax?` <b style="color:var(--danger)">Budget trop serré pour ce style : voici la tenue la moins chère.</b>`:''}</p>`;
+  ${budgetTooLow&&S.budgetMax?`<p class="hint"><b style="color:var(--danger)">Budget trop serré : la tenue reste 100 % ton dressing.</b></p>`:''}`;
 }
+function sourcesCount(){ return 1 + ['friends','voisins','seconde'].filter(k=>S.src[k]).length; }
 function renderCabine(){
   const look = S.look, st = styleById(S.style);
   const photoPill = S.photo ? `<img src="${S.photo}" alt="">` : `<span class="mf">${avatar(BASE_OUTFIT)}</span>`;
@@ -1157,18 +1229,22 @@ function renderCabine(){
     <div class="filterbar">
       <button class="fpill ph" data-action="cab-sheet" data-v="photo" aria-label="Ma photo">${photoPill}</button>
       <button class="fpill" data-action="cab-sheet" data-v="style"><span class="sw">${styleSwatch(st).map(c=>`<i style="background:${c}"></i>`).join('')}</span>${esc(st.name)}${I.down}</button>
-      <button class="fpill" data-action="cab-sheet" data-v="budget">${S.budgetMax?euro(S.budgetMax):BUDGETS[S.budget].sym}${S.secondHand?' · occasion':''}${I.down}</button>
-      <button class="fpill ${S.useMine?'on':''}" data-action="toggle-mine" aria-pressed="${S.useMine}">${I.dressing}Dressing</button>
+      <button class="fpill eco-pill" data-action="cab-sheet" data-v="sources">${I.leaf}<span>${sourcesCount()} sources</span>${I.down}</button>
+      <button class="fpill" data-action="cab-sheet" data-v="sources">${I.walk}<span>${S.radius} min</span>${I.down}</button>
     </div>`;
   if(!look){
-    return h + `<div class="stage empty-stage"><div class="layer"><div class="fig">${avatar(BASE_OUTFIT)}</div></div>${S.generating?`<div class="loading"><div class="scan"></div><b id="loadTxt">Analyse de la silhouette…</b><div class="bar"><i></i></div></div>`:searchOverlay()}</div></section>`;
+    return h + `<div class="stage empty-stage"><div class="layer"><div class="fig">${avatar(BASE_OUTFIT)}</div></div>${S.generating?`<div class="loading"><div class="scan"></div><b id="loadTxt">Lecture de ton dressing…</b><div class="bar"><i></i></div></div>`:searchOverlay()}</div></section>`;
   }
   const items = sortItems(look.items);
   const before = S.photo ? `<img class="photo" src="${S.photo}" alt="Avant">` : `<div class="fig">${avatar(BASE_OUTFIT)}</div>`;
   const cols = items.filter(i=>i.type!=='acc').map(i=>i.color);
   const after = S.photo ? `<img class="photo" src="${S.photo}" alt="Après"><div class="tint" style="background:linear-gradient(170deg,${cols.join(',')})"></div>` : `<div class="fig">${avatar(items)}</div>`;
   const pins = items.map((i,k)=>{ const [x,y]=pinPos(i,items); return `<button class="pin ${isLocked(i)?'locked':''}" style="left:${x}%;top:${y}%;--d:${k*70}ms" data-action="pin" data-id="${i.id}" aria-label="Voir ${esc(i.name)}">${k+1}</button>`; }).join('');
-  const total = toBuyTotal(items), ownN = items.filter(i=>i.owned).length;
+  const ownN = items.filter(i=>i.owned).length;
+  const borrowN = items.filter(i=>!i.owned && (i.friend || i.src==='voisin')).length;
+  const usedN = items.length - ownN - borrowN;
+  const paid = paidTotal(items);
+  const parts = [`${ownN} à toi`]; if(borrowN) parts.push(`${borrowN} à emprunter`); if(usedN) parts.push(`${usedN} d'occasion`);
   h += `<div class="stage" id="stage" style="--cut:${S.cut}%">
       <div class="layer before">${before}</div>
       <div class="layer after">${after}</div>
@@ -1176,11 +1252,11 @@ function renderCabine(){
       <div class="layer pins"><div class="fig">${pins}</div></div>
       <span class="stamp like" id="stampL">J'aime</span><span class="stamp nope" id="stampN">Pas pour moi</span>
       <span class="tag-l" id="tagL">Avant</span><span class="tag-r" id="tagR">${esc(look.label)}</span>
-      ${S.photo?`<div class="demo-note">Aperçu simulé : le rendu réaliste viendra du modèle d'essayage IA.</div>`:''}
-      ${S.generating?`<div class="loading"><div class="scan"></div><b id="loadTxt">Analyse de la silhouette…</b><div class="bar"><i></i></div></div>`:''}
-      ${S.pending && !S.generating ? searchOverlay() : ''}
+      ${S.photo?`<div class="demo-note">Aperçu léger calculé sur ton téléphone · aucune image générée</div>`:''}
+      ${S.generating?`<div class="loading"><div class="scan"></div><b id="loadTxt">Lecture de ton dressing…</b><div class="bar"><i></i></div></div>`:''}
+      ${S.paused && !S.generating ? pauseOverlay() : (S.pending && !S.generating ? searchOverlay() : '')}
     </div>
-    <div class="swipe-row ${S.pending?'dim':''}">
+    <div class="swipe-row ${S.pending||S.paused?'dim':''}">
       <button class="round nope" data-action="swipe" data-v="-1" aria-label="Pas pour moi">${I.x}</button>
       <div class="cmp" role="group" aria-label="Comparer">
         <button data-action="cmp" data-v="100" id="cmpB">Avant</button>
@@ -1192,18 +1268,25 @@ function renderCabine(){
     <div class="summary">
       <button class="sum-main" data-action="toggle-items" aria-expanded="${S.showItems}">
         <span class="sw">${items.slice(0,5).map(i=>`<i style="background:${i.color}"></i>`).join('')}</span>
-        <span class="sum-t"><b>${items.length} pièces${ownN?` · ${ownN} à toi`:''}</b><span>${total?`${S.secondHand?'≈ ':''}${euro(total)} à acheter`:'Rien à acheter'}</span></span>
+        <span class="sum-t"><b>${items.length} pièces · 0 neuf</b><span>${parts.join(' · ')}${paid?` · ≈ ${euro(paid)}`:''}</span></span>
         <span class="chev ${S.showItems?'up':''}">${I.down}</span>
       </button>
       <button class="icon-btn" data-action="look-more" aria-label="Plus d'options">${I.dots}</button>
     </div>
+    ${ecoNote(`Acheté neuf, ce look pèserait ≈ ${Math.round(lookCO2(items))} kg CO₂e`, 'Ici, rien n\'est fabriqué pour toi : tout existe déjà.', 'sm')}
     ${S.showItems ? `<div class="list stagger">${items.map((i,k)=>itemRow(i,k+1,{lockable:true})).join('')}</div>` : ''}
   </section>`;
   return h;
 }
 function searchOverlay(){
   const st = styleById(S.style);
-  return `<div class="search-ov"><button class="search-btn" data-action="generate">${I.mix}<span><b>Chercher une tenue</b><small>${esc(st.name)} · ${S.budgetMax?euro(S.budgetMax):BUDGETS[S.budget].label}${S.useMine?' · Dressing':''}${S.secondHand?' · Occasion':''}</small></span></button></div>`;
+  return `<div class="search-ov"><button class="search-btn" data-action="generate">${I.mix}<span><b>Chercher une tenue</b><small>${esc(st.name)} · ${sourcesCount()} sources · ${S.radius} min</small></span></button></div>`;
+}
+function pauseOverlay(){
+  return `<div class="search-ov"><div class="pause-card">${I.leaf}<b>Petite pause</b>
+    <p>Tu as vu ${S.daily.max} propositions aujourd'hui. Le bon look est peut-être déjà dans ton dressing.</p>
+    <button class="btn primary" data-action="pause-outfits">Voir mes outfits</button>
+    <button class="btn" data-action="pause-more">Encore 3 propositions</button></div></div>`;
 }
 function cabSheet(kind){
   if(kind==='photo'){
@@ -1214,71 +1297,79 @@ function cabSheet(kind){
       <div class="photo-row">${meta}</div>
       <label class="btn primary label-file">${I.camera}${S.photo?'Changer de photo':'Ajouter ma photo'}<input type="file" accept="image/*" id="photoInput"></label>
       ${S.photo?`<button class="btn" data-action="clear-photo">${I.trash}Revenir au mannequin</button>`:''}
-      <div class="privacy">${I.shield}<span>Ta photo reste privée : jamais montrée à tes amis, jamais utilisée pour entraîner l'IA.</span></div>`;
+      <div class="privacy">${I.shield}<span>Ta photo reste sur ton téléphone. L'aperçu est calculé sur place : aucune image générée par IA, aucun serveur.</span></div>`;
   }
   if(kind==='style'){
     return `<div class="sheet-h"><h2>Choisis un style</h2><button class="btn sm" data-action="close-sheet">Fermer</button></div>
       <div class="style-grid">${STYLES.map(s=>`<button class="style-card" data-action="pick-style" data-v="${s.id}" aria-pressed="${S.style===s.id}">
-        <span class="sc-fig">${avatar(buildLook(s.id,2,null,null))}</span><b>${s.name}</b></button>`).join('')}</div>`;
+        <span class="sc-fig">${avatar(buildLook(s.id))}</span><b>${s.name}</b></button>`).join('')}</div>`;
   }
-  return `<div class="sheet-h"><h2>Budget et filtres</h2><button class="btn sm" data-action="close-sheet">Fermer</button></div>
-    ${budgetPicker()}
-    <div class="switch"><div><b>Seconde main</b><span>Liens Vinted, prix d'occasion</span></div>
-      <button class="tog" role="switch" aria-checked="${S.secondHand}" data-action="toggle-second" aria-label="Seconde main"></button></div>
-    <div class="switch"><div><b>Utiliser mon dressing</b><span>L'IA part de tes pièces</span></div>
-      <button class="tog" role="switch" aria-checked="${S.useMine}" data-action="toggle-mine" aria-label="Utiliser mon dressing"></button></div>
-    ${S.useMine?`<div class="slider-wrap"><div class="slider-labels"><span>Nouveaux</span><span>Mon dressing</span></div>
-      <input class="rng" type="range" min="0" max="100" step="25" value="${S.mixRatio}" id="mixRange" aria-label="Part de ta garde-robe"><div class="ratio" id="mixLab">${mixLabel(S.mixRatio)}</div></div>`:''}
+  const tog = (k,label,sub) => `<div class="switch"><div><b>${label}</b><span>${sub}</span></div><button class="tog" role="switch" aria-checked="${S.src[k]}" data-action="src-toggle" data-v="${k}" aria-label="${label}"></button></div>`;
+  return `<div class="sheet-h"><h2>D'où viennent les pièces</h2><button class="btn sm" data-action="close-sheet">Fermer</button></div>
+    ${ecoNote('Jamais de neuf', 'Tenu cherche d\'abord dans ton dressing, puis autour de toi.')}
+    <div class="switch"><div><b>Mon dressing</b><span>Toujours en premier</span></div><button class="tog" role="switch" aria-checked="true" disabled aria-label="Mon dressing"></button></div>
+    ${tog('friends','Mes amis','Prêts entre amis')}
+    ${tog('voisins','Mes voisins','Prêt gratuit, à pied')}
+    ${tog('seconde','Seconde main','Friperies solidaires, puis Vinted')}
+    <div class="eyebrow">Distance maximale</div>
+    <div class="budget" role="radiogroup" aria-label="Distance">${[10,15,25].map(m=>`<button class="bopt" role="radio" aria-checked="${S.radius===m}" data-action="radius" data-v="${m}"><b>${m} min</b><span>à pied</span></button>`).join('')}</div>
+    ${S.src.seconde ? budgetPicker() : ''}
     <button class="btn primary" data-action="apply-filters">Appliquer</button>`;
 }
-function mixify(items, styleId){
-  return items.map(tpl => {
-    if(isLocked(tpl)) return tpl;
-    const tagged = S.wardrobe.filter(i=>i.type===tpl.type && (i.tags||[]).includes(styleId));
-    if(tagged.length && Math.random()*100 < S.mixRatio) return shuffle(tagged)[0];
-    return tpl;
-  });
-}
-function makeVariant(styleId, avoidKey){
-  let items = buildLook(styleId, S.budget, avoidKey, S.budgetMax, S.locks);
-  if(S.useMine) items = mixify(items, styleId);
-  return items;
-}
-const mixLabel = r => r===0?'100 % nouveaux articles':r===100?'100 % ta garde-robe':`${r} % ta garde-robe · ${100-r} % nouveaux`;
 
 /* ================= Dressing ================= */
 const FILTERS = [['all','Tout'],['top','Hauts'],['outer','Vestes'],['bottom','Bas'],['shoes','Chaussures'],['acc','Accessoires'],['sleep','À ressortir']];
 function comboCount(ward){
   let n=0; STYLES.forEach(st=>{ const f=t=>ward.filter(i=>i.type===t&&(i.tags||[]).includes(st.id)).length; n+=f('top')*f('bottom')*f('shoes')*(1+f('outer')); }); return n;
 }
+/* La pièce qui débloquerait le plus de tenues, trouvée chez un voisin ou en friperie, à pied */
 function impactList(){
   const base = comboCount(S.wardrobe);
-  const cands = [...BASICS, ...allCatalog().filter(i=>i.type!=='acc')].filter(fitsBudget)
-    .filter(c=>!S.wardrobe.some(w=>w.type===c.type && cdist(w.color,c.color)<40));
+  const seen = new Set();
+  const cands = allCatalog().filter(i=>(i.src==='voisin'||i.src==='friperie') && i.walk<=S.radius && i.type!=='acc')
+    .filter(c=>!S.wardrobe.some(w=>w.type===c.type && cdist(w.color,c.color)<40))
+    .filter(c=>{ if(seen.has(c.name)) return false; seen.add(c.name); return true; });
   return cands.map(c=>({item:c, gain: comboCount([...S.wardrobe,{...c,owned:true}]) - base}))
-    .filter(x=>x.gain>0).sort((a,b)=>b.gain-a.gain || a.item.price-b.item.price).slice(0,4);
+    .filter(x=>x.gain>0).sort((a,b)=>b.gain-a.gain || a.item.walk-b.item.walk).slice(0,3);
 }
 function renderDressing(){
   let h = `<section class="screen">
     <div class="sec-h"><div><h1>Mon dressing</h1><p class="lede">${S.wardrobe.length} pièces · ${comboCount(S.wardrobe)} tenues possibles</p></div>
       <button class="fab" data-action="add-menu" aria-label="Ajouter une pièce">${I.plus}</button></div>
-    <div class="tabs3" role="tablist">${[['pieces','Pièces'],['outfits','Outfits'],['idees','Idées d\'achat']].map(([k,l])=>`<button role="tab" data-action="dtab" data-v="${k}" aria-selected="${S.dtab===k}">${l}</button>`).join('')}</div>`;
+    <div class="tabs3" role="tablist">${[['pieces','Pièces'],['outfits','Outfits'],['durer','Faire durer']].map(([k,l])=>`<button role="tab" data-action="dtab" data-v="${k}" aria-selected="${S.dtab===k}">${l}</button>`).join('')}</div>`;
   if(S.dtab==='outfits'){
     if(!S.outfits.length) S.outfits = makeOutfits();
+    h += ecoNote('Zéro achat', 'Ces tenues sont faites uniquement avec ce que tu as.', 'sm');
     h += S.outfits.map((o,k)=>outfitCard(o,k)).join('') || `<div class="empty">Ajoute au moins un haut, un bas et des chaussures.</div>`;
     h += `<button class="btn primary" data-action="make-outfits">${I.shuffle}Autres outfits</button>`;
-  } else if(S.dtab==='idees'){
+  } else if(S.dtab==='durer'){
+    const sleeping = S.wardrobe.filter(i=>idleDays(i.id)>=21).sort((a,b)=>idleDays(b.id)-idleDays(a.id));
+    h += ecoNote('Le vêtement le plus durable est celui que tu as déjà', 'Ressortir, prêter, réparer, donner : chaque geste évite un achat neuf.');
+    h += `<div class="step"><div class="sec-h"><h2>À ressortir</h2><span class="sub">${sleeping.length} pièce${sleeping.length>1?'s':''}</span></div>`;
+    h += sleeping.length ? sleeping.map(i=>{ const d=idleDays(i.id); return `<div class="keep">
+        <div class="row1"><div class="ico">${thumb(i)}</div><div class="info"><b>${esc(i.name)}</b><span>${d===Infinity?'Jamais portée':`Pas portée depuis ${d} jours`}</span></div></div>
+        <div class="acts">
+          <button data-action="force" data-id="${i.id}">${I.today}<span>Ressortir</span></button>
+          <button data-action="lend-toggle" data-id="${i.id}" aria-pressed="${!!i.lendable}">${I.swap}<span>${i.lendable?'Prêtée':'Prêter'}</span></button>
+          <button data-action="repair" data-id="${i.id}">${I.wrench}<span>Réparer</span></button>
+          <button data-action="give" data-id="${i.id}">${I.gift}<span>Donner</span></button>
+        </div></div>`; }).join('') : `<div class="empty">Tout ton dressing tourne. Bravo !</div>`;
+    h += `</div>`;
     const imp = impactList();
-    h += `<p class="hint">La pièce qui débloque le plus de nouvelles tenues avec ce que tu as déjà.</p>`;
-    h += imp.length ? `<div class="list">${imp.map(({item,gain})=>`<div class="impact"><div class="ico">${thumb(item)}</div>
-        <div class="info" style="flex:1;min-width:0"><b style="display:block;font-size:14px">${esc(item.name)}</b><span class="sub">${esc(item.brand)} · ${euro(priceOf(item,S.secondHand))}</span></div>
-        <div class="right" style="display:flex;flex-direction:column;align-items:flex-end;gap:4px"><span class="gain">+${gain} tenues</span><a class="link" href="${shopUrl(item,S.secondHand)}" target="_blank" rel="noopener">Voir ${I.ext}</a></div></div>`).join('')}</div>`
-      : `<div class="empty">Ton dressing est déjà bien équilibré pour ton budget.</div>`;
+    if(imp.length){
+      h += `<div class="step"><div class="sec-h"><h2>La pièce qui te manque</h2><span class="sub">Empruntée, pas achetée</span></div>
+        <div class="list">${imp.map(({item,gain})=>`<div class="impact"><div class="ico">${thumb(item)}</div>
+          <div class="info" style="flex:1;min-width:0"><b style="display:block;font-size:14px">${esc(item.name)}</b><span class="sub">${srcInfo(item).sub}</span></div>
+          <div class="right" style="display:flex;flex-direction:column;align-items:flex-end;gap:4px"><span class="gain">+${gain} tenues</span>
+          ${item.src==='voisin'?`<button class="link" data-action="borrow" data-fid="${item.fid}" data-id="${item.id}">${I.swap}Emprunter</button>`:`<span class="used">≈ ${euro(item.used)}</span>`}</div></div>`).join('')}</div></div>`;
+    }
+    h += `<div class="step"><div class="sec-h"><h2>Réparer près de toi</h2><span class="sub">À pied</span></div>
+      <div class="list">${REPAIRERS.map(r=>`<div class="item"><div class="ico sm">${I.wrench}</div><div class="info"><b>${esc(r.name)}</b><span>${r.kind} · ${walkTxt(r.walk)}</span></div></div>`).join('')}</div></div>`;
   } else {
     const list = S.wardrobe.filter(i=> S.wfilter==='all' || (S.wfilter==='sleep' ? idleDays(i.id)>=21 : i.type===S.wfilter));
     h += `<div class="chips" role="group" aria-label="Catégories">${FILTERS.map(([k,l])=>{ const n = k==='all'?S.wardrobe.length : k==='sleep'?S.wardrobe.filter(i=>idleDays(i.id)>=21).length : S.wardrobe.filter(i=>i.type===k).length;
         return n||k==='all' ? `<button class="chip sm" data-action="wfilter" data-v="${k}" aria-pressed="${S.wfilter===k}">${l} <span style="opacity:.6">${n}</span></button>` : ''; }).join('')}</div>
-      <div class="grid3">${list.map(i=>{ const d=idleDays(i.id); return `<button class="tile" data-action="open-item" data-id="${i.id}"><div class="box ${i.img?'checker':''}">${thumb(i)}${d>=21?`<span class="zz">${d===Infinity?'Jamais':d+' j'}</span>`:''}</div><span>${esc(i.name)}</span></button>`; }).join('')}</div>`;
+      <div class="grid3">${list.map(i=>{ const d=idleDays(i.id); return `<button class="tile" data-action="open-item" data-id="${i.id}"><div class="box ${i.img?'checker':''}">${thumb(i)}${d>=21?`<span class="zz">${d===Infinity?'Jamais':d+' j'}</span>`:''}${i.lendable?`<span class="lend">${I.swap}</span>`:''}</div><span>${esc(i.name)}</span></button>`; }).join('')}</div>`;
   }
   return h + `</section>`;
 }
@@ -1305,7 +1396,7 @@ function makeOutfits(){
   return res.slice(0,4);
 }
 
-/* ================= Amis ================= */
+/* ================= Partage : amis et quartier ================= */
 const ACCESS = {
   full:{label:'Accès complet',short:'Complet',icon:'eye',desc:'Voit toute ta garde-robe.'},
   match:{label:'Matching seulement',short:'Matching',icon:'link2',desc:'Ne voit que les pièces qui vont avec les siennes.'},
@@ -1338,16 +1429,37 @@ function activityRows(){
   return rows;
 }
 function renderAmis(){
-  const rows = activityRows();
   let h = `<section class="screen">
-    <div class="sec-h"><div><h1>Amis</h1><p class="lede">${S.friends.filter(f=>!f.pending).length} amis</p></div>
-      <div class="row" style="gap:8px"><button class="icon-btn" data-action="open-group" aria-label="Tenue de groupe">${I.group}</button><button class="fab" data-action="add-friend-sheet" aria-label="Ajouter un ami">${I.plus}</button></div></div>`;
+    <div class="sec-h"><div><h1>Partage</h1><p class="lede">Prêter, emprunter, échanger autour de toi</p></div>
+      <div class="row" style="gap:8px"><button class="icon-btn" data-action="open-group" aria-label="Tenue de groupe">${I.group}</button><button class="fab" data-action="add-friend-sheet" aria-label="Ajouter un ami">${I.plus}</button></div></div>
+    <div class="segbar" role="tablist"><button role="tab" data-action="ptab" data-v="amis" aria-pressed="${S.ptab==='amis'}">${I.amis}Amis</button><button role="tab" data-action="ptab" data-v="quartier" aria-pressed="${S.ptab==='quartier'}">${I.pin}Quartier</button></div>`;
+  if(S.ptab==='quartier') return h + renderQuartier() + `</section>`;
+  const rows = activityRows();
   if(rows.length) h += `<div class="step"><div class="eyebrow">Activité</div><div class="list act-list">${rows.join('')}</div></div>`;
   h += `<div class="step"><div class="eyebrow">Tes amis</div>` + S.friends.map(f=>`<button class="friend" data-action="open-friend" data-id="${f.id}">
       <div class="av" style="background:${f.hue}">${esc(f.name[0])}</div>
       <div class="info"><b>${esc(f.name)}</b><span>${esc(f.handle)}${f.pending?' · invitation envoyée':''}</span></div>
       ${f.pending?`<span class="access none">En attente</span>`:accessBadge(f.theirAccess)}</button>`).join('') + `</div>`;
   return h + `</section>`;
+}
+function renderQuartier(){
+  const near = NEIGHBORS.flatMap(n=>n.items).filter(i=>i.walk<=S.radius).sort((a,b)=>a.walk-b.walk);
+  const seen = new Set(); const list = near.filter(i=>{ if(seen.has(i.name)) return false; seen.add(i.name); return true; }).slice(0,6);
+  const mine = S.wardrobe.filter(i=>i.lendable);
+  return `${ecoNote('Ton quartier ce mois-ci', '230 pièces ont circulé · 41 prêts · 18 réparations', 'big')}
+    <div class="step"><div class="sec-h"><h2>À emprunter près de toi</h2><span class="sub">≤ ${S.radius} min à pied</span></div>
+      <div class="list">${list.map(i=>itemRow(i,null)).join('')}</div></div>
+    <div class="step"><div class="sec-h"><h2>Tu prêtes au quartier</h2><span class="sub">${mine.length} pièce${mine.length>1?'s':''}</span></div>
+      ${mine.length ? `<div class="list">${mine.map(i=>`<div class="item"><div class="ico">${thumb(i)}</div><div class="info"><b>${esc(i.name)}</b><span>${TYPES[i.type]} · visible par tes voisins</span></div><div class="right"><button class="link" data-action="lend-toggle" data-id="${i.id}">Retirer</button></div></div>`).join('')}</div>`
+        : `<div class="empty">Dans ton dressing, touche une pièce puis « Prêtable au quartier ».</div>`}</div>
+    <div class="step"><div class="sec-h"><h2>Points relais</h2><span class="sub">Dépose, l'autre récupère</span></div>
+      <div class="list">${RELAYS.map(r=>`<div class="item"><div class="ico sm">${I.pin}</div><div class="info"><b>${esc(r.name)}</b><span>${walkTxt(r.walk)} · ${r.hours}</span></div></div>`).join('')}</div></div>
+    <div class="card troc">
+      <div class="eyebrow">Prochain troc</div>
+      <h2>Troc du campus</h2>
+      <p class="muted" style="margin:0">Samedi, 14h–17h · ${walkTxt(10)}. Viens avec 3 pièces, repars avec 3 autres.</p>
+      <button class="btn ${S.troc?'':'primary'}" data-action="troc">${S.troc?I.check+'Tu y vas':'J\'y vais'}</button>
+    </div>`;
 }
 function addFriendSheet(){
   return `<div class="sheet-h"><h2>Ajouter un ami</h2><button class="btn sm" data-action="close-sheet">Fermer</button></div>
@@ -1395,7 +1507,7 @@ function friendSheet(f){
           : `<div class="result"><h3>Aucun article similaire</h3><p>Vos dressings sont complémentaires. Essaie « Outfit qui match ».</p></div>`;
       } else {
         h += r.data ? `<div class="result"><h3>Oui, un outfit ${esc(r.data.label)} match</h3><p>${f.theirAccess==='match'?`Seules les pièces de ${esc(f.name)} utilisées sont révélées.`:`Une tenue qui mélange vos deux garde-robes.`}</p>
-          <div class="list">${sortItems(r.data.items).map(i=>itemRow(i,null,{borrow:true})).join('')}</div>
+          <div class="list">${sortItems(r.data.items).map(i=>itemRow(i,null)).join('')}</div>
           <div class="row"><div class="mini" style="width:70px">${avatar(sortItems(r.data.items)).replace('<svg','<svg style="height:130px"')}</div><button class="btn sm mauve" data-action="try-match">Essayer sur moi</button></div></div>`
           : `<div class="result"><h3>Pas de match pour l'instant</h3><p>Ajoute plus de pièces à ton dressing pour élargir les combinaisons.</p></div>`;
       }
@@ -1409,12 +1521,15 @@ function friendSheet(f){
   return h + `</div><button class="btn sm ghost" data-action="remove-friend" data-id="${f.id}" style="color:var(--danger);align-self:flex-start">${I.trash}Retirer ${esc(f.name)}</button>`;
 }
 function borrowSheet(f, item){
+  const walk = item.walk ? walkTxt(item.walk) : null;
   return `<div class="sheet-h"><h2>Emprunter à ${esc(f.name)}</h2><button class="btn sm" data-action="close-sheet">Annuler</button></div>
-    <div class="item" style="border:1px solid var(--line);border-radius:16px"><div class="ico">${thumb(item)}</div><div class="info"><b>${esc(item.name)}</b><span>${TYPES[item.type]}</span></div></div>
+    <div class="item" style="border:1px solid var(--line);border-radius:16px"><div class="ico">${thumb(item)}</div><div class="info"><b>${esc(item.name)}</b><span>${TYPES[item.type]}${walk?` · ${walk}`:''}</span></div></div>
     <label class="eyebrow" for="loanDate">Je la rends le</label>
     <input class="field" type="date" id="loanDate" value="${inDays(7)}" min="${inDays(1)}">
+    <div class="eyebrow">Où la récupérer</div>
+    <div class="seg" role="radiogroup">${[{n:'En main propre',s:walk||'À pied'},...RELAYS.slice(0,2).map(r=>({n:r.name,s:`Point relais · ${walkTxt(r.walk)}`}))].map((o,k)=>`<button class="opt" role="radio" aria-checked="${k===0}" data-action="pickup" data-v="${k}"><span class="radio"></span><div><b>${esc(o.n)}</b><span>${o.s}</span></div></button>`).join('')}</div>
     <button class="btn primary" data-action="confirm-borrow" data-fid="${f.id}" data-id="${item.id}">${I.swap}Envoyer la demande</button>
-    <p class="hint">${esc(f.name)} reçoit une notification et peut accepter ou refuser. Un rappel part la veille du retour.</p>`;
+    ${ecoNote('Un emprunt, c\'est un achat neuf en moins', CO2[item.type] ? `Environ ${fmtKg(CO2[item.type])} kg CO₂e évités par rapport à acheter cette pièce neuve.` : '', 'sm')}`;
 }
 function groupSheet(){
   const g = S.group;
@@ -1427,36 +1542,71 @@ function groupSheet(){
     <div class="chips wrap">${STYLES.map(s=>`<button class="chip sm" data-action="g-style" data-v="${s.id}" aria-pressed="${g.style===s.id}">${s.name}</button>`).join('')}</div>
     <button class="btn primary" data-action="g-go">${I.mix}Habiller le groupe</button>`;
   if(g.result){
-    const buy = g.result.reduce((a,p)=>a+p.buy,0);
-    h += `<div class="group-grid">${g.result.map(p=>`<div class="gcard">${avatar(sortItems(p.items))}<b>${esc(p.name)}</b><span>${p.buy?`${p.buy} à acheter`:'Tout en stock'}</span></div>`).join('')}</div>
-      <p class="hint">${buy?`${buy} pièce${buy>1?'s':''} manquante${buy>1?'s':''} au total, avec liens dans le look de chacun.`:'Tout le monde a déjà ce qu\'il faut.'} Pour les amis en mode matching, seules les pièces utilisées sont montrées.</p>
+    const borrow = g.result.reduce((a,p)=>a+p.borrow,0);
+    h += `<div class="group-grid">${g.result.map(p=>`<div class="gcard">${avatar(sortItems(p.items))}<b>${esc(p.name)}</b><span>${p.borrow?`${p.borrow} à emprunter`:'Tout en stock'}</span></div>`).join('')}</div>
+      <p class="hint">${borrow?`${borrow} pièce${borrow>1?'s':''} à emprunter dans le quartier, rien à acheter.`:'Tout le monde a déjà ce qu\'il faut.'}</p>
       <button class="btn mauve" data-action="g-try">Voir ma tenue en détail</button>`;
   }
   return h;
 }
 function dressPerson(name, wardrobe, st, isMe){
-  const items=[]; let buy=0;
-  buildLook(st.id).forEach(tpl=>{
-    const m = wardrobe.find(i=>i.type===tpl.type && (i.tags||[]).includes(st.id));
-    if(m) items.push(isMe?m:{...m,friend:name});
-    else if(tpl.type!=='acc' && tpl.type!=='outer'){ items.push({...tpl}); buy++; }
+  const items=[]; let borrow=0;
+  ['top','bottom','shoes','outer'].forEach(t=>{
+    const m = wardrobe.find(i=>i.type===t && (i.tags||[]).includes(st.id));
+    if(m){ items.push(isMe?m:{...m,friend:name}); return; }
+    if(t==='outer') return;
+    const n = (st.slots[t]||[]).find(i=>i.src==='voisin' && i.walk<=S.radius);
+    if(n){ items.push({...n}); borrow++; }
   });
-  return {name, items, buy};
+  return {name, items, borrow};
 }
 
 /* ================= Moi ================= */
+function challenges(){
+  const days = Math.min(30, diffDays(S.noNewSince, TODAY));
+  return [
+    {t:'30 jours sans achat neuf', v:days, max:30},
+    {t:'Ressortir 5 pièces oubliées', v:Math.min(5,S.impact.ressorties), max:5},
+    {t:'Prêter 5 pièces', v:Math.min(5,S.impact.prets), max:5},
+  ];
+}
 function renderMoi(){
   const weekN = S.log.filter(e=>diffDays(e.date,TODAY)<7).length;
+  const im = S.impact;
   let h = `<section class="screen">
     <div class="me"><label class="pp" aria-label="Changer ma photo de profil"><span class="face">${S.avatar?`<img src="${S.avatar}" alt="Ma photo de profil">`:'N'}</span><span class="cam">${I.camera}</span><input type="file" accept="image/*" id="avatarInput"></label>
       <div style="min-width:0"><h1 style="font-size:22px">Mon profil</h1>
       ${S.avatar?`<button class="link" data-action="del-avatar" style="margin-top:6px">${I.trash}Retirer la photo</button>`:`<p class="lede" style="margin-top:2px">Touche le cercle pour ajouter ta photo</p>`}</div></div>
-    <div class="stats"><div class="stat"><b>${S.wardrobe.length}</b><span>Pièces</span></div><div class="stat"><b>${S.saved.length}</b><span>Looks</span></div><div class="stat"><b>${S.friends.filter(f=>!f.pending).length}</b><span>Amis</span></div></div>
+    <div class="impact-card">
+      <div class="sec-h"><div class="eyebrow" style="color:var(--lime-ink)">Ton impact</div><button class="link" data-action="impact-how">Comment c'est calculé ?</button></div>
+      <div class="big">≈ ${Math.round(im.co2)} <small>kg CO₂e</small></div>
+      <span class="muted">évités par rapport à des achats neufs</span>
+      <div class="impact-grid">
+        <div><b>${monthWorn()}</b><span>Tenues sans achat</span></div>
+        <div><b>${im.prets + im.emprunts}</b><span>Prêts et emprunts</span></div>
+        <div><b>${im.reparations}</b><span>Réparations</span></div>
+        <div><b>${im.ressorties}</b><span>Pièces ressorties</span></div>
+      </div>
+    </div>
+    <div class="step"><h2>Défis</h2>
+      ${challenges().map(c=>`<div class="challenge"><div class="top"><b>${c.t}</b><span>${c.v}/${c.max}</span></div><div class="progress"><i style="width:${Math.round(c.v/c.max*100)}%"></i></div></div>`).join('')}
+    </div>
     <div class="step"><h2>Mes looks</h2>
       ${S.saved.length ? `<div class="saved-grid">${S.saved.map((s,k)=>`<button data-action="open-saved" data-k="${k}">${avatar(sortItems(s.items))}<span>${esc(s.label)}</span></button>`).join('')}</div>`
         : `<div class="empty">Glisse un look vers la droite dans la Cabine pour le garder ici.</div>`}
     </div>
     <div class="groups">
+    <details class="grp" data-g="mission"><summary>${I.leaf}<span>Notre engagement</span>${I.down}</summary><div class="grp-body">
+      <p class="mission">« Le plus beau vêtement est celui qui existe déjà. »</p>
+      <div class="values">
+        <div><b>Sobriété</b><span>Tu portes d'abord ce que tu as. Tenu ne vend rien.</span></div>
+        <div><b>Partage</b><span>Prêter, échanger, donner entre amis et voisins.</span></div>
+        <div><b>Proximité</b><span>Tout se fait à pied ou à vélo, près de chez toi.</span></div>
+        <div><b>Seconde vie</b><span>Réparer, retoucher, revendre plutôt que jeter.</span></div>
+        <div><b>Transparence</b><span>L'impact affiché est une estimation, sources à l'appui.</span></div>
+      </div>
+      ${ecoNote('Tenu ne gagne rien quand tu achètes', 'Pas de pub, pas de commission sur les achats. L\'IA tourne sur ton téléphone et ne génère aucune image.', 'sm')}
+    </div></details>
     <details class="grp" data-g="week"><summary>${I.today}<span>Ma semaine</span><em>${weekN} tenue${weekN>1?'s':''}</em>${I.down}</summary><div class="grp-body">
       <div class="week">${[6,5,4,3,2,1,0].map(n=>{ const ds=daysAgo(n), e=S.log.find(x=>x.date===ds), dd=new Date(ds+'T12:00');
         const its = e ? e.itemIds.map(id=>S.wardrobe.find(i=>i.id===id)).filter(Boolean) : [];
@@ -1464,17 +1614,13 @@ function renderMoi(){
           <small>${dd.toLocaleDateString(LOC(),{weekday:'short'}).replace('.','')}</small><b>${dd.getDate()}</b>
           <div class="dmini">${its.length?avatar(its):'<i class="none"></i>'}</div></button>`; }).join('')}</div>
     </div></details>
-    <details class="grp" data-g="shop"><summary>${I.ruler}<span>Tailles et alertes prix</span><em>${S.alerts.length} alerte${S.alerts.length>1?'s':''}</em>${I.down}</summary><div class="grp-body">
+    <details class="grp" data-g="shop"><summary>${I.ruler}<span>Mes tailles</span><em>Pour emprunter juste</em>${I.down}</summary><div class="grp-body">
       <div class="sizes">
         <label for="size-top">Hauts<input class="field" id="size-top" value="${esc(S.sizes.top)}"></label>
         <label for="size-bottom">Bas<input class="field" id="size-bottom" value="${esc(S.sizes.bottom)}"></label>
         <label for="size-shoes">Pointure<input class="field" id="size-shoes" inputmode="numeric" value="${esc(S.sizes.shoes)}"></label></div>
       ${S.brandNotes.length?`<div class="list">${S.brandNotes.map((b,k)=>`<div class="item"><div class="info"><b>${esc(b.brand)}</b><span>${esc(b.note)}</span></div><button class="btn xs ghost" data-action="del-note" data-k="${k}" aria-label="Supprimer">${I.trash}</button></div>`).join('')}</div>`:''}
       <form class="add-row" id="addNote"><input class="field" id="noteBrand" placeholder="Marque" style="max-width:110px"><input class="field" id="noteText" placeholder="Note de taille"><button class="btn mauve" type="submit" aria-label="Ajouter la note">${I.plus}</button></form>
-      ${S.alerts.length ? `<div class="list">${S.alerts.map((a,k)=>{ const now = Math.round(a.price*(1-(a.drop||0))*100)/100;
-        return `<div class="item"><div class="ico">${thumb(a)}</div><div class="info"><b>${esc(a.name)}</b><span>${a.drop?`<span class="drop">-${Math.round(a.drop*100)} %</span>`:'Prix stable'}</span></div>
-        <div class="right"><span class="p">${euro(now)}</span><a class="link" href="${shopUrl(a,false)}" target="_blank" rel="noopener">Voir ${I.ext}</a></div>
-        <button class="btn xs ghost" data-action="del-alert" data-k="${k}" aria-label="Arrêter le suivi">${I.trash}</button></div>`; }).join('')}</div>` : ''}
     </div></details>
     <details class="grp" data-g="prefs"><summary>${I.spark}<span>Préférences</span>${I.down}</summary><div class="grp-body">
       <div class="eyebrow">Langue</div>
@@ -1483,6 +1629,8 @@ function renderMoi(){
       <div class="segbar">
         <button data-action="set-theme" data-v="light" aria-pressed="${S.theme==='light'}">${I.sun}Clair</button>
         <button data-action="set-theme" data-v="dark" aria-pressed="${S.theme==='dark'}">${I.moon}Sombre</button></div>
+      <div class="eyebrow">Rayon de partage</div>
+      <div class="budget" role="radiogroup" aria-label="Rayon">${[10,15,25].map(m=>`<button class="bopt" role="radio" aria-checked="${S.radius===m}" data-action="radius" data-v="${m}"><b>${m} min</b><span>à pied</span></button>`).join('')}</div>
       <div class="switch"><div><b>Goûts appris par l'IA</b><span>${S.tasteN} avis</span></div><button class="btn sm" data-action="reset-taste" ${S.tasteN?'':'disabled'}>Réinitialiser</button></div>
       <div class="eyebrow">Nouveaux amis voient par défaut</div>
       <div class="seg" role="radiogroup">${['full','match','none'].map(k=>`<button class="opt" role="radio" aria-checked="${S.defaultShare===k}" data-action="default-share" data-v="${k}"><span class="radio"></span><div><b>${ACCESS[k].label}</b><span>${ACCESS[k].desc}</span></div></button>`).join('')}</div>
@@ -1497,14 +1645,25 @@ function renderMoi(){
   </section>`;
   return h;
 }
-/* ================= Fiches (ajout, pièce, import, article) ================= */
+function impactSheet(){
+  return `<div class="sheet-h"><h2>Comment c'est calculé</h2><button class="btn sm" data-action="close-sheet">Fermer</button></div>
+    <p class="muted" style="margin:0">Quand tu empruntes, prêtes, répares ou achètes d'occasion à la place d'un vêtement neuf, Tenu compte l'empreinte de fabrication de ce vêtement neuf.</p>
+    <div class="list">
+      <div class="item"><div class="info"><b>T-shirt en coton</b><span>Pour les hauts</span></div><div class="right"><span class="p">6,4 kg CO₂e</span></div></div>
+      <div class="item"><div class="info"><b>Jean</b><span>Pour les bas et les vestes</span></div><div class="right"><span class="p">25,1 kg CO₂e</span></div></div>
+      <div class="item"><div class="info"><b>Chaussures en cuir</b><span>Pour les chaussures</span></div><div class="right"><span class="p">15 kg CO₂e</span></div></div>
+    </div>
+    <p class="hint">Source : ADEME, Impact CO2 (impactco2.fr). Ce sont des ordres de grandeur, pas une mesure exacte. Ressortir une pièce ou donner ne compte pas de CO₂ : seul un achat neuf évité est compté.</p>
+    <a class="btn" href="https://impactco2.fr/outils/habillement" target="_blank" rel="noopener">Voir la source ${I.ext}</a>`;
+}
+/* ================= Fiches (ajout, pièce, article) ================= */
 const COLORS = ['#F5F5F2','#18181C','#8E8A96','#2E3E5C','#6D8FBF','#CDB892','#5A3A22','#4B5234','#6B1F2E','#D97A3A','#C23A5A','#F29CC6','#9B59F5','#C6F432'];
 function addSheet(){
   const d = S.draft;
   return `<div class="sheet-h"><h2>Nouvelle pièce${S.queue.length?` · encore ${S.queue.length}`:''}</h2><button class="btn sm" data-action="skip-add">Passer</button></div>
     <img class="preview-img ${d.cutOn?'checker':''}" src="${d.cutOn?d.cut:d.orig}" alt="Aperçu" style="${d.cutOn?'':'background:var(--surface2)'}">
     <div class="detect">${I.spark}<span>Détecté : ${TYPES[d.autoType]} · couleur <i style="display:inline-block;width:12px;height:12px;border-radius:50%;background:${d.autoColor};vertical-align:-2px;border:1px solid var(--line)"></i> · style ${esc(styleById(d.tags[0])?.name||'—')}. Corrige si besoin.</span></div>
-    <div class="switch"><div><b>Détourage auto</b><span>Retire le fond de la photo</span></div><button class="tog" role="switch" aria-checked="${d.cutOn}" data-action="d-cut" aria-label="Détourage auto"></button></div>
+    <div class="switch"><div><b>Détourage auto</b><span>Calculé sur ton téléphone</span></div><button class="tog" role="switch" aria-checked="${d.cutOn}" data-action="d-cut" aria-label="Détourage auto"></button></div>
     <input class="field" id="draftName" value="${esc(d.name)}" placeholder="Nom (ex. Veste en velours)">
     <div class="eyebrow">Catégorie</div>
     <div class="chips wrap">${Object.entries(TYPES).map(([k,l])=>`<button class="chip sm" data-action="d-type" data-v="${k}" aria-pressed="${d.type===k}">${l}</button>`).join('')}</div>
@@ -1515,43 +1674,51 @@ function addSheet(){
     <button class="btn primary" data-action="confirm-add">Ajouter au dressing</button>`;
 }
 function itemSheet(i){
-  const d = idleDays(i.id), n = wearCount(i.id);
+  const d = idleDays(i.id), n = (i.wornBefore||0) + wearCount(i.id);
+  const cpw = i.paid ? i.paid/Math.max(1,n) : null;
   return `<div class="sheet-h"><h2>${esc(i.name)}</h2><button class="btn sm" data-action="close-sheet">Fermer</button></div>
-    <div class="ico ${i.img?'checker':''}" style="width:100%;height:200px;border-radius:18px">${thumb(i)}</div>
+    <div class="ico ${i.img?'checker':''}" style="width:100%;height:190px;border-radius:18px">${thumb(i)}</div>
     <div class="row" style="flex-wrap:wrap;gap:6px"><span class="own">${TYPES[i.type]}</span>${(i.tags||[]).map(t=>`<span class="friend-own">${esc(styleById(t)?.name||t)}</span>`).join('')}</div>
-    <div class="stats"><div class="stat"><b>${n}</b><span>Fois portée</span></div><div class="stat"><b>${d===Infinity?'—':d+' j'}</b><span>Dernière fois</span></div><div class="stat"><b>${S.friends.filter(f=>f.theirAccess!=='none').reduce((a,f)=>a+f.items.filter(x=>x.type===i.type&&cdist(x.color,i.color)<60).length,0)}</b><span>Twins amis</span></div></div>
+    <div class="stats"><div class="stat"><b>${n}</b><span>Fois portée</span></div><div class="stat"><b>${d===Infinity?'—':d+' j'}</b><span>Dernière fois</span></div><div class="stat"><b>${cpw!=null?euro(Math.round(cpw*100)/100):'—'}</b><span>Coût par port</span></div></div>
+    ${cpw!=null?ecoNote('Plus tu la portes, moins elle coûte', 'Le coût par port baisse à chaque fois que tu la mets.', 'sm'):''}
     <button class="btn mauve" data-action="item-mix" data-id="${i.id}">${I.mix}Créer une tenue autour</button>
     <button class="btn" data-action="force" data-id="${i.id}">${I.today}La porter demain</button>
-    ${d>=60||d===Infinity?`<a class="btn" href="https://www.vinted.be/items/new" target="_blank" rel="noopener">${I.bag}La revendre sur Vinted</a>`:''}
+    <div class="switch"><div><b>Prêtable au quartier</b><span>Tes voisins peuvent te l'emprunter</span></div><button class="tog" role="switch" aria-checked="${!!i.lendable}" data-action="lend-toggle" data-id="${i.id}" aria-label="Prêtable au quartier"></button></div>
+    <div class="duo"><button class="btn" data-action="repair" data-id="${i.id}">${I.wrench}Réparer</button><button class="btn" data-action="give" data-id="${i.id}">${I.gift}Donner</button></div>
     <button class="btn ghost" data-action="del-item" data-id="${i.id}" style="color:var(--danger)">${I.trash}Supprimer du dressing</button>`;
 }
-function importSheet(){
-  const all = MAIL_ORDERS.flatMap(o=>o.items);
-  const avail = all.filter(i=>!S.imported.includes(i.key));
-  return `<div class="sheet-h"><h2>Importer mes commandes</h2><button class="btn sm" data-action="close-sheet">Fermer</button></div>
-    <div class="detect">${I.mail}<span>Démo : dans l'app, tu connectes Gmail ou Outlook et Tenu lit uniquement les confirmations de commande de boutiques mode.</span></div>
-    ${MAIL_ORDERS.map(o=>`<div class="order"><div class="order-h"><span>${esc(o.shop)}</span><span class="sub">${o.date}</span></div>
-      ${o.items.map(i=>{ const done=S.imported.includes(i.key), on=S.importSel.includes(i.key);
-        return `<div class="item"><div class="ico">${garment(i.type,i.color)}</div><div class="info"><b>${esc(i.name)}</b><span>${TYPES[i.type]}</span></div>
-          ${done?'<span class="own">Déjà ajouté</span>':`<button class="check" role="checkbox" aria-checked="${on}" data-action="imp-sel" data-v="${i.key}" aria-label="Sélectionner ${esc(i.name)}">${on?I.check:''}</button>`}</div>`; }).join('')}</div>`).join('')}
-    <button class="btn primary" data-action="imp-go" ${S.importSel.length?'':'disabled'}>${avail.length?`Ajouter ${S.importSel.length} pièce${S.importSel.length>1?'s':''}`:'Tout est déjà importé'}</button>`;
+function repairSheet(i){
+  return `<div class="sheet-h"><h2>Réparer${i?` : ${esc(i.name)}`:''}</h2><button class="btn sm" data-action="close-sheet">Fermer</button></div>
+    ${ecoNote('Réparer plutôt que remplacer', i?`Remplacer cette pièce par du neuf : environ ${fmtKg(CO2[i.type]||0)} kg CO₂e.`:'')}
+    <div class="list">${REPAIRERS.map((r,k)=>`<div class="item"><div class="ico sm">${I.wrench}</div><div class="info"><b>${esc(r.name)}</b><span>${r.kind} · ${walkTxt(r.walk)}</span></div>
+      <div class="right"><button class="btn xs mauve" data-action="repair-go" data-id="${i?i.id:''}" data-v="${k}">J'y vais</button></div></div>`).join('')}</div>`;
+}
+function giveSheet(i){
+  return `<div class="sheet-h"><h2>Donner une seconde vie</h2><button class="btn sm" data-action="close-sheet">Fermer</button></div>
+    <div class="item" style="border:1px solid var(--line);border-radius:16px"><div class="ico">${thumb(i)}</div><div class="info"><b>${esc(i.name)}</b><span>${TYPES[i.type]}</span></div></div>
+    <div class="menu">
+      <button class="menu-row" data-action="give-neighbor" data-id="${i.id}"><span class="mi">${I.amis}</span><span>La donner à un voisin<small>Elle apparaît dans le quartier, quelqu'un passe la prendre à pied</small></span></button>
+      <button class="menu-row" data-action="give-shop" data-id="${i.id}"><span class="mi">${I.pin}</span><span>La déposer à la friperie solidaire<small>${SHOPS.s1.name} · ${walkTxt(SHOPS.s1.walk)}</small></span></button>
+      <a class="menu-row" href="${VINTED_SELL}" target="_blank" rel="noopener"><span class="mi">${I.bag}</span><span>La revendre sur Vinted<small>Pour qu'elle serve à quelqu'un d'autre</small></span></a>
+    </div>`;
 }
 function articleSheet(i, k){
-  const second = S.secondHand;
+  const s = srcInfo(i);
   const size = {top:S.sizes.top,outer:S.sizes.top,bottom:S.sizes.bottom,shoes:S.sizes.shoes}[i.type];
-  const note = S.brandNotes.find(b=>i.brand && i.brand.toLowerCase().includes(b.brand.toLowerCase()));
-  const watched = S.alerts.some(a=>a.name===i.name);
+  const sizeNote = size ? `<div class="detect">${I.ruler}<span>Ta taille : ${esc(size)}</span></div>` : '';
   let cta;
-  if(i.owned) cta = `<div class="result"><h3>Cette pièce est déjà à toi</h3><p>Elle vient de ton dressing, rien à acheter.</p></div>`;
-  else if(i.friend) cta = `<div class="result"><h3>Pièce de ${esc(i.friend)}</h3><p>Demande-lui de te la prêter.</p></div>${i.fid?`<button class="btn mauve" data-action="borrow" data-fid="${i.fid}" data-id="${i.id}">${I.swap}Emprunter</button>`:''}`;
-  else cta = `<div class="row" style="justify-content:space-between"><span class="muted">${esc(i.brand)} · ${second?'seconde main estimée':esc(i.shop)}</span><span class="price">${second?'≈ ':''}${euro(priceOf(i,second))}</span></div>
-    ${size?`<div class="detect">${I.ruler}<span>Ta taille : ${esc(size)}${note?` · ${esc(note.brand)} : ${esc(note.note)}`:''}</span></div>`:''}
-    <a class="btn primary" href="${shopUrl(i,second)}" target="_blank" rel="noopener sponsored">Voir l'article sur ${second?'Vinted':esc(i.shop)} ${I.ext}</a>
-    <div class="actions">
-      <a class="btn" href="${shopUrl(i,!second)}" target="_blank" rel="noopener sponsored">${second?'Neuf':'Seconde main'} ${I.ext}</a>
-      <button class="btn" data-action="watch" data-id="${i.id}" ${watched?'disabled':''}>${I.bell}${watched?'Suivi':'Alerte prix'}</button>
-    </div>
-    <button class="btn" data-action="bought" data-id="${i.id}">${I.check}Je l'ai acheté : l'ajouter au dressing</button>`;
+  if(s.kind==='mine') cta = `<div class="result"><h3>Cette pièce est déjà à toi</h3><p>Elle vient de ton dressing, rien à acheter.</p></div>`;
+  else if(s.kind==='ami' || s.kind==='voisin') cta = `<div class="result"><h3>${s.kind==='ami'?`Pièce de ${esc(i.friend)}`:`Prêtée par ${esc(i.owner)}`}</h3><p>${s.kind==='voisin'?`Prêt gratuit · ${walkTxt(i.walk)}`:'Demande-lui de te la prêter.'}</p></div>
+    ${sizeNote}<button class="btn primary" data-action="borrow" data-fid="${i.fid}" data-id="${i.id}">${I.swap}Emprunter</button>
+    ${ecoNote('Un emprunt, c\'est un achat neuf en moins', CO2[i.type] ? `≈ ${fmtKg(CO2[i.type])} kg CO₂e évités` : '', 'sm')}`;
+  else if(s.kind==='friperie') cta = `<div class="row" style="justify-content:space-between"><span class="muted">${esc(SHOPS[i.shopId].name)} · ${walkTxt(i.walk)}</span><span class="price">≈ ${euro(i.used)}</span></div>
+    ${sizeNote}<button class="btn primary" data-action="reserve" data-id="${i.id}">${I.pin}Réserver 48 h à la friperie</button>
+    <button class="btn" data-action="bought" data-id="${i.id}">${I.check}Je l'ai prise : l'ajouter au dressing</button>
+    ${ecoNote('Seconde main locale', 'Tu y vas à pied, la pièce ne voyage pas.', 'sm')}`;
+  else cta = `<div class="row" style="justify-content:space-between"><span class="muted">Vinted · seconde main</span><span class="price">≈ ${euro(i.used)}</span></div>
+    ${sizeNote}<a class="btn primary" href="${vintedUrl(i)}" target="_blank" rel="noopener">Voir sur Vinted ${I.ext}</a>
+    <button class="btn" data-action="bought" data-id="${i.id}">${I.check}Je l'ai prise : l'ajouter au dressing</button>
+    ${ecoNote('Astuce', 'Choisis la livraison en point relais : les colis y sont regroupés. Tenu ne touche aucune commission.', 'sm')}`;
   return `<div class="sheet-h"><div class="row"><span class="n" style="width:28px;height:28px;font-size:12px">${k}</span><h2>${esc(i.name)}</h2></div><button class="btn sm" data-action="close-sheet">Fermer</button></div>
     <div class="ico" style="width:100%;height:170px;border-radius:18px">${thumb(i)}</div>${cta}`;
 }
@@ -1655,6 +1822,95 @@ const DICT_ROWS = [
 ['Toutes les pièces sont libérées','All items released','Todas las prendas liberadas'],['Tu seras prévenu si le prix baisse','You\'ll be notified if the price drops','Te avisaremos si baja el precio'],
 ['Aimé et enregistré, je t\'en propose plus comme ça','Liked and saved, more like this coming up','Guardado, te propondré más como este'],['Noté, voici une autre variante','Got it, here\'s another variant','Entendido, aquí va otra variante'],['Tout libérer','Release all','Liberar todo'],
 ['Pantalon','Trousers','Pantalón'],
+['Partage','Sharing','Compartir'],['Quartier','Neighbourhood','Barrio'],['Amis','Friends','Amigos'],
+['Le plus beau vêtement est celui qui existe déjà.','The most beautiful garment is the one that already exists.','La prenda más bonita es la que ya existe.'],
+['« Le plus beau vêtement est celui qui existe déjà. »','“The most beautiful garment is the one that already exists.”','«La prenda más bonita es la que ya existe.»'],
+['Porter','Wear','Llevar'],['Partager','Share','Compartir'],['Faire durer','Make it last','Hacer durar'],
+['Voir ce qu\'on se prête dans le quartier','See what neighbours lend each other','Ver lo que se presta en el barrio'],
+['100 % ton dressing · 0 achat neuf','100% your wardrobe · 0 new purchase','100 % tu armario · 0 compras nuevas'],
+['Ton dressing + un prêt du quartier','Your wardrobe + a loan from the neighbourhood','Tu armario + un préstamo del barrio'],
+['Il te manque une pièce : un voisin peut te la prêter.','You\'re missing one item: a neighbour can lend it to you.','Te falta una prenda: un vecino te la puede prestar.'],
+['Ressortir une pièce oubliée','Bring back a forgotten item','Recuperar una prenda olvidada'],
+['Noté : une tenue de plus sans rien acheter','Noted: one more outfit without buying anything','Anotado: un look más sin comprar nada'],
+['Lecture de ton dressing…','Reading your wardrobe…','Leyendo tu armario…'],['Recherche autour de toi…','Looking around you…','Buscando cerca de ti…'],
+['Aperçu léger calculé sur ton téléphone · aucune image générée','Light preview computed on your phone · no generated image','Vista ligera calculada en tu móvil · ninguna imagen generada'],
+['Ici, rien n\'est fabriqué pour toi : tout existe déjà.','Nothing is made for you here: everything already exists.','Aquí no se fabrica nada para ti: todo existe ya.'],
+['Petite pause','Short break','Pequeña pausa'],['Voir mes outfits','See my outfits','Ver mis looks'],['Encore 3 propositions','3 more suggestions','3 propuestas más'],
+['Ta photo reste sur ton téléphone. L\'aperçu est calculé sur place : aucune image générée par IA, aucun serveur.','Your photo stays on your phone. The preview is computed on the device: no AI-generated image, no server.','Tu foto se queda en tu móvil. La vista se calcula en el dispositivo: ninguna imagen generada por IA, ningún servidor.'],
+['D\'où viennent les pièces','Where items come from','De dónde vienen las prendas'],['Jamais de neuf','Never new','Nunca nuevo'],
+['Tenu cherche d\'abord dans ton dressing, puis autour de toi.','Tenu looks in your wardrobe first, then around you.','Tenu busca primero en tu armario y luego cerca de ti.'],
+['Toujours en premier','Always first','Siempre primero'],['Mes amis','My friends','Mis amigos'],['Prêts entre amis','Loans between friends','Préstamos entre amigos'],
+['Mes voisins','My neighbours','Mis vecinos'],['Prêt gratuit, à pied','Free loan, on foot','Préstamo gratuito, a pie'],
+['Friperies solidaires, puis Vinted','Charity thrift shops, then Vinted','Tiendas solidarias de segunda mano, luego Vinted'],
+['Distance maximale','Maximum distance','Distancia máxima'],['Distance','Distance','Distancia'],['à pied','on foot','a pie'],['À pied','On foot','A pie'],
+['Budget maximum pour la seconde main','Maximum budget for second-hand','Presupuesto máximo para segunda mano'],
+['ex. 30','e.g. 30','p. ej. 30'],['Budget trop serré : la tenue reste 100 % ton dressing.','Budget too tight: the outfit stays 100% your wardrobe.','Presupuesto demasiado ajustado: el look sigue siendo 100 % tu armario.'],
+['Seulement avec mon dressing','Only with my wardrobe','Solo con mi armario'],['Prêt gratuit','Free loan','Préstamo gratuito'],['Seconde main','Second-hand','Segunda mano'],
+['Vinted · seconde main','Vinted · second-hand','Vinted · segunda mano'],['Vinted · envoi en point relais','Vinted · pickup-point delivery','Vinted · envío a punto de recogida'],
+['ton dressing','your wardrobe','tu armario'],
+['Réserver 48 h à la friperie','Reserve 48 h at the thrift shop','Reservar 48 h en la tienda'],['Je l\'ai prise : l\'ajouter au dressing','I got it: add to wardrobe','Me la he quedado: añadir al armario'],
+['Seconde main locale','Local second-hand','Segunda mano local'],['Tu y vas à pied, la pièce ne voyage pas.','You walk there, the item doesn\'t travel.','Vas a pie, la prenda no viaja.'],
+['Voir sur Vinted','View on Vinted','Ver en Vinted'],['Astuce','Tip','Consejo'],
+['Choisis la livraison en point relais : les colis y sont regroupés. Tenu ne touche aucune commission.','Choose pickup-point delivery: parcels are grouped there. Tenu takes no commission.','Elige la entrega en punto de recogida: los paquetes se agrupan. Tenu no cobra ninguna comisión.'],
+['Un emprunt, c\'est un achat neuf en moins','A loan is one less new purchase','Un préstamo es una compra nueva menos'],
+['Réservée 48 h : tu y passes à pied quand tu veux','Reserved 48 h: walk by whenever you like','Reservada 48 h: pasa a pie cuando quieras'],
+['Zéro achat','Zero purchase','Cero compras'],['Ces tenues sont faites uniquement avec ce que tu as.','These outfits use only what you already own.','Estos looks usan solo lo que ya tienes.'],
+['Le vêtement le plus durable est celui que tu as déjà','The most sustainable garment is the one you already own','La prenda más sostenible es la que ya tienes'],
+['Ressortir, prêter, réparer, donner : chaque geste évite un achat neuf.','Wear again, lend, repair, give: each action avoids a new purchase.','Recuperar, prestar, reparar, donar: cada gesto evita una compra nueva.'],
+['À ressortir','To wear again','Para recuperar'],['Ressortir','Wear again','Recuperar'],['Prêter','Lend','Prestar'],['Prêtée','Lent','Prestada'],['Réparer','Repair','Reparar'],['Donner','Give','Donar'],
+['Jamais portée','Never worn','Nunca usada'],['Tout ton dressing tourne. Bravo !','Your whole wardrobe gets worn. Well done!','Todo tu armario se usa. ¡Bravo!'],
+['La pièce qui te manque','The item you\'re missing','La prenda que te falta'],['Empruntée, pas achetée','Borrowed, not bought','Prestada, no comprada'],
+['Réparer près de toi','Repair near you','Reparar cerca de ti'],['Retouches, ourlets, fermetures','Alterations, hems, zips','Arreglos, dobladillos, cremalleras'],['Semelles, talons, cuir','Soles, heels, leather','Suelas, tacones, cuero'],
+['Gratuit','Free','Gratis'],['1er samedi du mois','1st Saturday of the month','1.er sábado del mes'],
+['Atelier Fil & Aiguille','Thread & Needle Workshop','Taller Hilo y Aguja'],['Cordonnerie du Marché','Market Cobbler','Zapatería del Mercado'],['Repair Café du quartier','Neighbourhood Repair Café','Repair Café del barrio'],
+['Friperie solidaire Le Fil','Le Fil charity thrift shop','Tienda solidaria Le Fil'],['Ressourcerie du quartier','Neighbourhood reuse centre','Centro de reutilización del barrio'],
+['Boulangerie du coin','Corner bakery','Panadería de la esquina'],['Bibliothèque du campus','Campus library','Biblioteca del campus'],['Salle de sport Move','Move gym','Gimnasio Move'],
+['Détourage et détection sur ton téléphone','Background removal and detection on your phone','Recorte y detección en tu móvil'],
+['Ajoute ce que tu as déjà : plus ton dressing est complet, moins tu as besoin d\'acheter.','Add what you already own: the more complete your wardrobe, the less you need to buy.','Añade lo que ya tienes: cuanto más completo tu armario, menos necesitas comprar.'],
+['Calculé sur ton téléphone','Computed on your phone','Calculado en tu móvil'],
+['Coût par port','Cost per wear','Coste por uso'],['Plus tu la portes, moins elle coûte','The more you wear it, the less it costs','Cuanto más la usas, menos cuesta'],
+['Le coût par port baisse à chaque fois que tu la mets.','Cost per wear drops every time you wear it.','El coste por uso baja cada vez que te la pones.'],
+['Prêtable au quartier','Lendable to the neighbourhood','Prestable al barrio'],['Tes voisins peuvent te l\'emprunter','Your neighbours can borrow it','Tus vecinos te la pueden pedir prestada'],
+['Réparer plutôt que remplacer','Repair rather than replace','Reparar en lugar de reemplazar'],["J'y vais","I'll go","Voy"],
+['Réparation notée : une pièce sauvée','Repair noted: one item saved','Reparación anotada: una prenda salvada'],
+['Donner une seconde vie','Give it a second life','Darle una segunda vida'],['La donner à un voisin','Give it to a neighbour','Dársela a un vecino'],
+['Elle apparaît dans le quartier, quelqu\'un passe la prendre à pied','It shows up in the neighbourhood, someone picks it up on foot','Aparece en el barrio, alguien pasa a recogerla a pie'],
+['La déposer à la friperie solidaire','Drop it at the charity thrift shop','Dejarla en la tienda solidaria'],['La revendre sur Vinted','Resell it on Vinted','Revenderla en Vinted'],
+['Pour qu\'elle serve à quelqu\'un d\'autre','So someone else can use it','Para que le sirva a otra persona'],
+['Merci ! Elle attend sa nouvelle vie à la friperie','Thanks! It awaits its new life at the thrift shop','¡Gracias! Espera su nueva vida en la tienda'],
+['Merci ! Elle est proposée à tes voisins','Thanks! It\'s offered to your neighbours','¡Gracias! Se ofrece a tus vecinos'],
+['Visible par tes voisins : prêt possible','Visible to your neighbours: available to lend','Visible para tus vecinos: se puede prestar'],['Retirée du prêt','Removed from lending','Retirada del préstamo'],
+['Prêter, emprunter, échanger autour de toi','Lend, borrow, swap around you','Prestar, pedir prestado, intercambiar cerca de ti'],
+['Ton quartier ce mois-ci','Your neighbourhood this month','Tu barrio este mes'],['230 pièces ont circulé','230 items changed hands','230 prendas han circulado'],['41 prêts','41 loans','41 préstamos'],['18 réparations','18 repairs','18 reparaciones'],
+['À emprunter près de toi','To borrow near you','Para pedir prestado cerca'],['Tu prêtes au quartier','You lend to the neighbourhood','Prestas al barrio'],
+['visible par tes voisins','visible to your neighbours','visible para tus vecinos'],
+['Dans ton dressing, touche une pièce puis « Prêtable au quartier ».','In your wardrobe, tap an item then “Lendable to the neighbourhood”.','En tu armario, toca una prenda y luego «Prestable al barrio».'],
+['Points relais','Pickup points','Puntos de recogida'],['Dépose, l\'autre récupère','Drop off, they pick up','Dejas, el otro recoge'],['Point relais','Pickup point','Punto de recogida'],
+['Prochain troc','Next swap','Próximo trueque'],['Troc du campus','Campus swap','Trueque del campus'],['Samedi, 14h–17h','Saturday, 2–5 pm','Sábado, 14–17 h'],
+['10 min à pied. Viens avec 3 pièces, repars avec 3 autres.','10 min on foot. Bring 3 items, leave with 3 others.','10 min a pie. Trae 3 prendas, llévate otras 3.'],
+['Tu y vas','You\'re going','Vas'],['Noté ! Rappel la veille du troc','Noted! Reminder the day before the swap','¡Anotado! Aviso el día antes del trueque'],['Désinscrit du troc','Removed from the swap','Desinscrito del trueque'],
+['Où la récupérer','Where to pick it up','Dónde recogerla'],['En main propre','In person','En mano'],
+['Ton impact','Your impact','Tu impacto'],['Comment c\'est calculé ?','How is it calculated?','¿Cómo se calcula?'],['Comment c\'est calculé','How it\'s calculated','Cómo se calcula'],
+['kg CO₂e','kg CO₂e','kg CO₂e'],['évités par rapport à des achats neufs','avoided compared with buying new','evitados frente a comprar nuevo'],
+['Tenues sans achat','Outfits without buying','Looks sin comprar'],['Prêts et emprunts','Loans and borrowing','Préstamos'],['Réparations','Repairs','Reparaciones'],['Pièces ressorties','Items worn again','Prendas recuperadas'],
+['Défis','Challenges','Retos'],['30 jours sans achat neuf','30 days without buying new','30 días sin comprar nuevo'],['Ressortir 5 pièces oubliées','Wear 5 forgotten items again','Recuperar 5 prendas olvidadas'],['Prêter 5 pièces','Lend 5 items','Prestar 5 prendas'],
+['Notre engagement','Our commitment','Nuestro compromiso'],['Sobriété','Sufficiency','Sobriedad'],['Partage','Sharing','Compartir'],['Proximité','Proximity','Proximidad'],['Seconde vie','Second life','Segunda vida'],['Transparence','Transparency','Transparencia'],
+['Tu portes d\'abord ce que tu as. Tenu ne vend rien.','You wear what you have first. Tenu sells nothing.','Primero llevas lo que tienes. Tenu no vende nada.'],
+['Prêter, échanger, donner entre amis et voisins.','Lend, swap, give between friends and neighbours.','Prestar, intercambiar, donar entre amigos y vecinos.'],
+['Tout se fait à pied ou à vélo, près de chez toi.','Everything happens on foot or by bike, close to home.','Todo se hace a pie o en bici, cerca de casa.'],
+['Réparer, retoucher, revendre plutôt que jeter.','Repair, alter, resell rather than throw away.','Reparar, arreglar, revender en lugar de tirar.'],
+['L\'impact affiché est une estimation, sources à l\'appui.','The impact shown is an estimate, with sources.','El impacto mostrado es una estimación, con fuentes.'],
+['Tenu ne gagne rien quand tu achètes','Tenu earns nothing when you buy','Tenu no gana nada cuando compras'],
+['Pas de pub, pas de commission sur les achats. L\'IA tourne sur ton téléphone et ne génère aucune image.','No ads, no commission on purchases. The AI runs on your phone and generates no images.','Sin anuncios ni comisiones por compras. La IA funciona en tu móvil y no genera imágenes.'],
+['Mes tailles','My sizes','Mis tallas'],['Pour emprunter juste','To borrow the right size','Para pedir la talla justa'],['Rayon de partage','Sharing radius','Radio para compartir'],['Rayon','Radius','Radio'],
+['Quand tu empruntes, prêtes, répares ou achètes d\'occasion à la place d\'un vêtement neuf, Tenu compte l\'empreinte de fabrication de ce vêtement neuf.','When you borrow, lend, repair or buy second-hand instead of a new garment, Tenu counts the manufacturing footprint of that new garment.','Cuando pides prestado, prestas, reparas o compras de segunda mano en lugar de una prenda nueva, Tenu cuenta la huella de fabricación de esa prenda nueva.'],
+['T-shirt en coton','Cotton T-shirt','Camiseta de algodón'],['Pour les hauts','For tops','Para partes de arriba'],['Jean','Jeans','Vaquero'],['Pour les bas et les vestes','For bottoms and jackets','Para partes de abajo y chaquetas'],['Chaussures en cuir','Leather shoes','Zapatos de cuero'],['Pour les chaussures','For shoes','Para calzado'],
+['Source : ADEME, Impact CO2 (impactco2.fr). Ce sont des ordres de grandeur, pas une mesure exacte. Ressortir une pièce ou donner ne compte pas de CO₂ : seul un achat neuf évité est compté.','Source: ADEME, Impact CO2 (impactco2.fr). These are orders of magnitude, not exact measurements. Wearing an item again or giving it away counts no CO₂: only an avoided new purchase is counted.','Fuente: ADEME, Impact CO2 (impactco2.fr). Son órdenes de magnitud, no mediciones exactas. Recuperar o donar una prenda no cuenta CO₂: solo se cuenta una compra nueva evitada.'],
+['Voir la source','View source','Ver la fuente'],
+['Indique un montant d\'au moins 5 €','Enter an amount of at least €5','Indica un importe de al menos 5 €'],
+['Photo ajoutée. Choisis un style puis cherche.','Photo added. Pick a style, then search.','Foto añadida. Elige un estilo y busca.'],
+['Sans limite','No limit','Sin límite'],
+
 ];
 const DICT = {en:{}, es:{}};
 DICT_ROWS.forEach(([fr,en,es]) => { DICT.en[fr]=en; DICT.es[fr]=es; });
@@ -1703,6 +1959,29 @@ const P = (en, es) => S.lang==='en' ? en : es;
 const pl = (n, one, many) => n>1 ? many : one;
 const nm = s => (NAMES[S.lang] && NAMES[S.lang][s]) || s;
 const RULES = [
+  [/^(\d+) à emprunter$/, m=>P(`${m[1]} to borrow`,`${m[1]} por pedir prestado`)],
+  [/^(\d+) d'occasion$/, m=>P(`${m[1]} second-hand`,`${m[1]} de segunda mano`)],
+  [/^(\d+) pièces · 0 neuf$/, m=>P(`${m[1]} items · 0 new`,`${m[1]} prendas · 0 nuevas`)],
+  [/^(\d+) sources$/, m=>P(`${m[1]} sources`,`${m[1]} fuentes`)],
+  [/^(\d+) min$/, m=>`${m[1]} min`],
+  [/^(\d+) min à pied$/, m=>P(`${m[1]} min on foot`,`${m[1]} min a pie`)],
+  [/^≤ (\d+) min à pied$/, m=>P(`≤ ${m[1]} min on foot`,`≤ ${m[1]} min a pie`)],
+  [/^Pas portée depuis (\d+) jours$/, m=>P(`Not worn for ${m[1]} days`,`Sin usar desde hace ${m[1]} días`)],
+  [/^Prêtée par (.+)$/, m=>P(`Lent by ${m[1]}`,`Prestada por ${m[1]}`)],
+  [/^Réparer : (.+)$/, m=>P(`Repair: ${nm(m[1])}`,`Reparar: ${nm(m[1])}`)],
+  [/^Environ ([\d,.]+) kg CO₂e évités par rapport à acheter cette pièce neuve\.$/, m=>P(`About ${m[1].replace(',','.')} kg CO₂e avoided compared with buying this item new.`,`Unos ${m[1]} kg CO₂e evitados frente a comprar esta prenda nueva.`)],
+  [/^≈ ([\d,.]+) kg CO₂e évités$/, m=>P(`≈ ${m[1].replace(',','.')} kg CO₂e avoided`,`≈ ${m[1]} kg CO₂e evitados`)],
+  [/^([\d,.]+) kg CO₂e$/, m=>P(`${m[1].replace(',','.')} kg CO₂e`,`${m[1]} kg CO₂e`)],
+  [/^Acheté neuf, ce look pèserait ≈ (\d+) kg CO₂e$/, m=>P(`Bought new, this look would weigh ≈ ${m[1]} kg CO₂e`,`Comprado nuevo, este look pesaría ≈ ${m[1]} kg CO₂e`)],
+  [/^Remplacer cette pièce par du neuf : environ ([\d,.]+) kg CO₂e\.$/, m=>P(`Replacing this item with a new one: about ${m[1].replace(',','.')} kg CO₂e.`,`Sustituir esta prenda por una nueva: unos ${m[1]} kg CO₂e.`)],
+  [/^(\d+) tenues portées ce mois-ci sans rien acheter\.$/, m=>P(`${m[1]} outfits worn this month without buying anything.`,`${m[1]} looks llevados este mes sin comprar nada.`)],
+  [/^(\d+) pièces? à emprunter dans le quartier, rien à acheter\.$/, m=>P(`${m[1]} ${pl(+m[1],'item','items')} to borrow in the neighbourhood, nothing to buy.`,`${m[1]} ${pl(+m[1],'prenda','prendas')} por pedir en el barrio, nada que comprar.`)],
+  [/^(.+) : une seconde vie dans ton dressing$/, m=>P(`${nm(m[1])}: a second life in your wardrobe`,`${nm(m[1])}: una segunda vida en tu armario`)],
+  [/^(.+) ressort aujourd'hui$/, m=>P(`${nm(m[1])} is back today`,`${nm(m[1])} vuelve hoy`)],
+  [/^Tu as vu (\d+) propositions aujourd'hui\. Le bon look est peut-être déjà dans ton dressing\.$/, m=>P(`You've seen ${m[1]} suggestions today. The right look may already be in your wardrobe.`,`Has visto ${m[1]} propuestas hoy. Puede que el look ideal ya esté en tu armario.`)],
+  [/^Mon look (.+) sur Tenu, 0 achat neuf :/, m=>P(`My ${trStr(m[1])} look on Tenu, 0 new purchase:`,`Mi look ${trStr(m[1])} en Tenu, 0 compras nuevas:`)],
+  [/^\+(\d+) tenues$/, m=>P(`+${m[1]} outfits`,`+${m[1]} looks`)],
+
   [/^\+(\d+) tenues$/, m=>P(`+${m[1]} outfits`,`+${m[1]} looks`)],
   [/^(\d+) avis$/, m=>P(`${m[1]} ratings`,`${m[1]} valoraciones`)],
   [/^(\d+) alertes?$/, m=>P(`${m[1]} ${pl(+m[1],'alert','alerts')}`,`${m[1]} ${pl(+m[1],'alerta','alertas')}`)],
@@ -1794,7 +2073,7 @@ function translateDOM(root){
 }
 
 /* ================= Rendu global ================= */
-const TABS = [['today','Aujourd\'hui'],['cabine','Cabine'],['dressing','Dressing'],['amis','Amis'],['moi','Moi']];
+const TABS = [['today','Aujourd\'hui'],['cabine','Cabine'],['dressing','Dressing'],['amis','Partage'],['moi','Moi']];
 const pendingCount = () => S.requests.length + S.loans.filter(l=>l.dir==='in'&&l.status==='pending').length;
 function render(opts={}){
   document.documentElement.dataset.theme = S.theme;
@@ -1835,19 +2114,25 @@ function go(tab){
   const ix = t => TABS.findIndex(x=>x[0]===t), dir = ix(tab) - ix(S.tab);
   S.tab=tab; render({enter: dir===0 ? 1 : dir}); window.scrollTo({top:0});
 }
-
+/* Sobriété : un nombre limité de propositions par jour */
+function overDaily(){
+  if(S.daily.date!==TODAY) S.daily={date:TODAY,n:0,max:12};
+  S.daily.n++;
+  return S.daily.n > S.daily.max;
+}
 function generate(){
   if(S.generating) return;
-  S.generating = true; S.pending = false; render();
-  const steps = ['Analyse de la silhouette…','Application du style '+styleById(S.style).name+'…','Recherche des articles…'];
-  steps.forEach((t,k)=>setTimeout(()=>{ const el=document.getElementById('loadTxt'); if(el) el.textContent=tr(t); }, k*550));
+  if(overDaily()){ S.paused=true; S.pending=false; save(); render(); return; }
+  S.generating = true; S.pending = false; S.paused = false; render();
+  const steps = ['Lecture de ton dressing…','Style '+styleById(S.style).name+'…','Recherche autour de toi…'];
+  steps.forEach((t,k)=>setTimeout(()=>{ const el=document.getElementById('loadTxt'); if(el) el.textContent=tr(t); }, k*450));
   setTimeout(()=>{
     const st = styleById(S.style);
     S.variant = (S.look && S.look.styleId===st.id) ? (S.variant||1)+1 : 1;
     S.look = {label:st.name, styleId:st.id, items: makeVariant(st.id, S.look && S.look.styleId===st.id ? lookKey(S.look) : null)};
-    S.generating = false; S.fresh = true; S.cut = 25; render();
+    S.generating = false; S.fresh = true; S.cut = 25; save(); render();
     document.getElementById('stage')?.scrollIntoView({behavior:'smooth',block:'start'});
-  }, 1700);
+  }, 1300);
 }
 function saveLook(look){
   const key = lookKey(look), idx = S.saved.findIndex(s=>s.key===key);
@@ -1855,12 +2140,12 @@ function saveLook(look){
   else { S.saved.unshift({key,label:look.label,styleId:look.styleId,items:look.items.map(i=>({...i}))}); toast('Look enregistré dans ton profil'); }
   save();
 }
-function tryOn(look){ S.fresh=true; S.cut=25; S.pending=false; S.look = {label:look.label, styleId:look.styleId, items:look.items.map(i=>({...i}))}; if(look.styleId) S.style=look.styleId; go('cabine'); setTimeout(()=>document.getElementById('stage')?.scrollIntoView({behavior:'smooth',block:'start'}),60); }
+function tryOn(look){ S.fresh=true; S.cut=25; S.pending=false; S.paused=false; S.look = {label:look.label, styleId:look.styleId, items:look.items.map(i=>({...i}))}; if(look.styleId) S.style=look.styleId; go('cabine'); setTimeout(()=>document.getElementById('stage')?.scrollIntoView({behavior:'smooth',block:'start'}),60); }
 function createPoll(a, q){
   let b = S.saved.find(s=>s.key!==lookKey(a));
   if(!b){ const other = shuffle(STYLES.filter(s=>s.id!==a.styleId))[0]; b = {label:other.name, styleId:other.id, items:buildLook(other.id)}; }
   S.polls.unshift({id:'p'+Date.now(), q, a:{label:a.label,styleId:a.styleId,items:a.items.map(i=>({...i}))}, b:{label:b.label,styleId:b.styleId,items:b.items.map(i=>({...i}))}, va:0, vb:0, open:true, target:Math.max(2,S.friends.filter(f=>!f.pending).length+1)});
-  save(); toast('Sondage envoyé à tes amis'); go('amis');
+  S.ptab='amis'; save(); toast('Sondage envoyé à tes amis'); go('amis');
 }
 function findLookItem(id){
   const pools = [S.look?.items||[], S.friendResult?.data?.items||[]];
@@ -1884,7 +2169,7 @@ function setCut(v, animate){
 /* Gestes sur l'image : poignée = comparer, reste = swipe j'aime / pas pour moi */
 let drag = null;
 document.addEventListener('pointerdown', e => {
-  const st = e.target.closest('#stage'); if(!st || e.target.closest('.pin') || e.target.closest('.search-ov') || S.generating || S.pending) return;
+  const st = e.target.closest('#stage'); if(!st || e.target.closest('.pin') || e.target.closest('.search-ov') || S.generating || S.pending || S.paused) return;
   const r = st.getBoundingClientRect(), cx = r.left + r.width*S.cut/100;
   drag = { st, x0:e.clientX, y0:e.clientY, mode: Math.abs(e.clientX-cx) < 34 ? 'cut' : 'maybe', id:e.pointerId };
   if(drag.mode==='cut') st.setPointerCapture?.(e.pointerId);
@@ -1911,7 +2196,7 @@ document.addEventListener('pointermove', e => {
   else { d.st.style.transform=''; ['stampL','stampN'].forEach(k=>{ const el=document.getElementById(k); if(el) el.style.opacity=0; }); }
 }));
 function flyOut(dir){
-  const st = document.getElementById('stage'); if(!st || !S.look || S.generating) return;
+  const st = document.getElementById('stage'); if(!st || !S.look || S.generating || S.paused) return;
   if(S.pending){ generate(); return; }
   document.getElementById(dir>0?'stampL':'stampN').style.opacity = 1;
   st.classList.add('flying'); st.style.transform = `translateX(${dir*130}%) rotate(${dir*16}deg)`; st.style.opacity = 0;
@@ -1922,6 +2207,7 @@ function swipeDecision(dir){
   look.items.forEach(i=>{ if(!isLocked(i)) S.taste[i.name] = Math.max(-3, Math.min(3, (S.taste[i.name]||0) + (dir>0?1:-1))); });
   S.tasteN++;
   if(dir>0 && !isSaved(look)){ S.saved.unshift({key:lookKey(look),label:look.label,styleId:look.styleId,items:look.items.map(i=>({...i}))}); }
+  if(overDaily()){ S.paused=true; save(); render(); return; }
   S.variant = (S.variant||1)+1;
   S.look = {label:look.label, styleId:look.styleId, items: makeVariant(look.styleId, lookKey(look))};
   S.fresh = true; S.enterDir = dir; S.cut = 25; save(); render();
@@ -1931,7 +2217,7 @@ function swipeDecision(dir){
 function applyBudget(){
   save();
   const sheetOpen = !document.getElementById('sheetWrap').hidden;
-  if(sheetOpen){ openSheet(cabSheet('budget')); return; }
+  if(sheetOpen){ openSheet(cabSheet('sources')); return; }
   S.pending = true; render(); toast('Budget : '+budgetLabel());
 }
 
@@ -1987,6 +2273,8 @@ function nextDraft(){
 }
 
 /* ================= Événements ================= */
+const wItem = id => S.wardrobe.find(x=>x.id===id);
+const sheetOpen = () => !document.getElementById('sheetWrap').hidden;
 document.addEventListener('click', e => {
   const b = e.target.closest('[data-action]'); if(!b) return;
   const a = b.dataset.action, v = b.dataset.v, id = b.dataset.id;
@@ -1998,46 +2286,43 @@ document.addEventListener('click', e => {
     case 'wx': S.weather=v; S.daySeed=0; save(); closeSheet(); render(); break;
     case 'occ': S.occasion=v; S.daySeed=0; save(); closeSheet(); render(); break;
     case 'today-sheet': openSheet(todaySheet(v)); break;
-    case 'today-more': openSheet(menuSheet('Plus d\'options',[['day-try',I.cabine,'Voir sur ma photo'],['day-poll',I.vote,'Demander l\'avis des amis'],['day-save',I.heart,'Enregistrer ce look']])); break;
+    case 'today-more': openSheet(menuSheet('Plus d\'options',[['day-sleep',I.zz,'Ressortir une pièce oubliée'],['day-try',I.cabine,'Voir sur ma photo'],['day-poll',I.vote,'Demander l\'avis des amis'],['day-save',I.heart,'Enregistrer ce look']])); break;
+    case 'day-sleep': { const i=[...S.wardrobe].sort((x,y)=>idleDays(y.id)-idleDays(x.id))[0]; closeSheet(); if(i){ S.forceItem=i.id; S.daySeed=0; addImpact('ressorties',null,false); render(); toast(`${i.name} ressort aujourd'hui`); } break; }
     case 'day-save': { const o=dayOutfit(); closeSheet(); if(!isSaved(o)) saveLook(o); else toast('Déjà dans tes looks'); break; }
-    case 'cab-sheet': openSheet(cabSheet(v)); break;
-    case 'toggle-mine': S.useMine=!S.useMine; if(!document.getElementById('sheetWrap').hidden){ openSheet(cabSheet('budget')); }
-      else { S.pending = true; render(); } break;
-    case 'apply-filters': closeSheet(); S.pending = true; save(); render(); break;
-    case 'look-more': openSheet(menuSheet('Ce look',[['save-look',isSaved(S.look)?I.heartF:I.heart,isSaved(S.look)?'Retirer de mes looks':'Enregistrer'],['share-look',I.share,'Partager la liste'],['poll-look',I.vote,'Faire voter mes amis'],['to-mix',I.dressing,'Refaire avec mon dressing']])); break;
-    case 'toggle-items': S.showItems=!S.showItems; render(); break;
-    case 'dtab': S.dtab=v; render(); break;
-    case 'add-menu': openSheet(`<div class="sheet-h"><h2>Ajouter des pièces</h2><button class="btn sm" data-action="close-sheet">Fermer</button></div>
-      <div class="menu"><label class="menu-row label-file"><span class="mi">${I.camera}</span><span>Depuis ma galerie<small>Détourage et détection automatiques</small></span><input type="file" accept="image/*" multiple id="wardrobeInput"></label>
-      <button class="menu-row" data-action="open-import"><span class="mi">${I.mail}</span><span>Depuis mes commandes<small>Confirmations Zalando, Vinted, ASOS</small></span></button></div>`); break;
-    case 'add-friend-sheet': openSheet(addFriendSheet()); setTimeout(()=>document.getElementById('friendHandle')?.focus(),250); break;
-    case 'open-poll': { const p=S.polls.find(x=>x.id===id); if(p){ S.openPoll=id; openSheet(pollSheet(p)); } break; }
     case 'day-next': S.daySeed++; render(); break;
-    case 'wear': { const o=dayOutfit(); S.log=S.log.filter(x=>x.date!==TODAY); S.log.unshift({date:TODAY,label:o.label,itemIds:o.items.filter(i=>i.owned).map(i=>i.id)}); S.forceItem=null; save(); render(); document.querySelector('[data-action=wear]')?.classList.add('done'); toast('Noté dans ton calendrier'); break; }
+    case 'wear': { const o=dayOutfit(); S.log=S.log.filter(x=>x.date!==TODAY); S.log.unshift({date:TODAY,label:o.label,itemIds:o.items.filter(i=>i.owned).map(i=>i.id)}); S.forceItem=null; save(); render(); toast('Noté : une tenue de plus sans rien acheter'); break; }
     case 'day-try': tryOn(dayOutfit()); break;
     case 'day-poll': { const o=dayOutfit(); createPoll(o, 'Pour aujourd\'hui ?'); break; }
     case 'open-day': openSheet(daySheet(v)); break;
     case 'unwear': S.log=S.log.filter(x=>x.date!==v); save(); closeSheet(); render(); break;
-    case 'force': S.forceItem=id; S.daySeed=0; closeSheet(); go('today'); toast('Pièce placée dans ta tenue du jour'); break;
+    case 'force': { const i=wItem(id); S.forceItem=id; S.daySeed=0; if(i && idleDays(i.id)>=21) addImpact('ressorties',null,false); closeSheet(); go('today'); toast('Pièce placée dans ta tenue du jour'); break; }
     case 'unforce': S.forceItem=null; render(); break;
     /* Cabine */
-    case 'pick-style': if(S.style!==v || !S.look) S.pending = true; S.style = v; closeSheet(); render(); break;
-    case 'toggle-second': S.secondHand = !S.secondHand; save(); if(!document.getElementById('sheetWrap').hidden) openSheet(cabSheet('budget')); else render(); break;
+    case 'cab-sheet': openSheet(cabSheet(v)); break;
+    case 'src-toggle': S.src[v]=!S.src[v]; save(); openSheet(cabSheet('sources')); break;
+    case 'radius': S.radius=+v; save(); if(sheetOpen()) openSheet(cabSheet('sources')); else render(); break;
+    case 'apply-filters': closeSheet(); S.pending = true; S.paused=false; save(); render(); break;
+    case 'look-more': openSheet(menuSheet('Ce look',[['save-look',isSaved(S.look)?I.heartF:I.heart,isSaved(S.look)?'Retirer de mes looks':'Enregistrer'],['share-look',I.share,'Partager la liste'],['poll-look',I.vote,'Faire voter mes amis'],['to-mix',I.dressing,'Seulement avec mon dressing']])); break;
+    case 'toggle-items': S.showItems=!S.showItems; render(); break;
+    case 'pick-style': if(S.style!==v || !S.look) S.pending = true; S.style = v; S.paused=false; closeSheet(); render(); break;
     case 'generate': generate(); break;
+    case 'pause-more': S.daily.max+=3; S.daily.n--; S.paused=false; generate(); break;
+    case 'pause-outfits': S.paused=false; S.dtab='outfits'; S.outfits=makeOutfits(); go('dressing'); break;
     case 'clear-photo': S.photo = null; save(); closeSheet(); render(); toast('Photo supprimée'); break;
     case 'pin': { const [i,k]=findLookItem(id); if(!i) break; openSheet(articleSheet(i,k));
       const row=document.getElementById('row-'+id); if(row){ row.classList.remove('flash'); void row.offsetWidth; row.classList.add('flash'); } break; }
-    case 'watch': { const [i]=findLookItem(id); if(i && !S.alerts.some(x=>x.name===i.name)){ S.alerts.unshift({...i,drop:0}); save(); b.disabled=true; b.innerHTML=I.bell+'Suivi'; toast('Tu seras prévenu si le prix baisse'); } break; }
+    case 'reserve': closeSheet(); toast('Réservée 48 h : tu y passes à pied quand tu veux'); break;
     case 'bought': { const [i]=findLookItem(id); if(!i) break;
-      const n = {id:nid(),type:i.type,name:i.name,color:i.color,shape:i.shape,tags:[...(i.tags||[]),...(S.look?.styleId?[S.look.styleId]:[])].filter((x,k,arr)=>arr.indexOf(x)===k),owned:true};
-      S.wardrobe.unshift(n); i.owned=true; i.id=n.id; save(); closeSheet(); render(); toast(`${i.name} ajouté à ton dressing`); break; }
+      const n = {id:nid(),type:i.type,name:i.name,color:i.color,shape:i.shape,tags:[...(i.tags||[]),...(S.look?.styleId?[S.look.styleId]:[])].filter((x,k,arr)=>arr.indexOf(x)===k),owned:true,paid:i.used||0,wornBefore:0};
+      S.wardrobe.unshift(n); i.owned=true; i.id=n.id; addImpact('occasion', i.type); closeSheet(); render(); toast(`${i.name} : une seconde vie dans ton dressing`); break; }
     case 'save-look': closeSheet(); saveLook(S.look); render(); break;
     case 'share-look': { closeSheet();
-      const txt = `Mon look ${S.look.label} sur Tenu :\n` + sortItems(S.look.items).map(i=>`- ${i.name}${i.owned?' (à moi)':` ${euro(priceOf(i,S.secondHand))} : ${shopUrl(i,S.secondHand)}`}`).join('\n');
+      const lab = i => { const s=srcInfo(i); return s.kind==='mine'?'(à moi)':s.kind==='vinted'?`≈ ${euro(i.used)} d'occasion : ${vintedUrl(i)}`:`(${s.sub})`; };
+      const txt = `Mon look ${S.look.label} sur Tenu, 0 achat neuf :\n` + sortItems(S.look.items).map(i=>`- ${i.name} ${lab(i)}`).join('\n');
       try{ navigator.clipboard.writeText(txt).then(()=>toast('Look copié, colle-le où tu veux'),()=>toast('Copie bloquée par le navigateur')); }catch(err){ toast('Copie bloquée par le navigateur'); }
       break; }
     case 'poll-look': closeSheet(); createPoll(S.look, 'Lequel je porte ?'); break;
-    case 'to-mix': closeSheet(); S.useMine=true; S.look={label:S.look.label,styleId:S.look.styleId,items:makeVariant(S.look.styleId)}; S.fresh=true; render(); toast('Look refait avec tes pièces'); break;
+    case 'to-mix': closeSheet(); S.src={friends:false,voisins:false,seconde:false}; S.look={label:S.look.label,styleId:S.look.styleId,items:makeVariant(S.look.styleId)}; S.fresh=true; save(); render(); toast('Look refait avec tes pièces'); break;
     case 'start': leaveIntro(v); break;
     case 'cmp': setCut(+v, true); break;
     case 'swipe': flyOut(+v); break;
@@ -2050,28 +2335,36 @@ document.addEventListener('click', e => {
     case 'reset-taste': S.taste={}; S.tasteN=0; save(); render(); toast('Goûts réinitialisés'); break;
     case 'unlock-all': S.locks=[]; render(); toast('Toutes les pièces sont libérées'); break;
     case 'budget-clear': S.budgetMax=null; applyBudget(); break;
-    case 'budget': S.budget=+v; S.budgetMax=null; applyBudget(); break;
-
     /* Dressing */
+    case 'add-menu': openSheet(`<div class="sheet-h"><h2>Ajouter des pièces</h2><button class="btn sm" data-action="close-sheet">Fermer</button></div>
+      <div class="menu"><label class="menu-row label-file"><span class="mi">${I.camera}</span><span>Depuis ma galerie<small>Détourage et détection sur ton téléphone</small></span><input type="file" accept="image/*" multiple id="wardrobeInput"></label></div>
+      <p class="hint">Ajoute ce que tu as déjà : plus ton dressing est complet, moins tu as besoin d'acheter.</p>`); break;
+    case 'dtab': S.dtab=v; render(); break;
     case 'wfilter': S.wfilter = v; render(); break;
     case 'make-outfits': S.outfits = makeOutfits(); render(); if(!S.outfits.length) toast('Ajoute au moins un haut, un bas et des chaussures'); break;
     case 'try-outfit': tryOn(S.outfits[+b.dataset.k]); break;
     case 'save-outfit': saveLook(S.outfits[+b.dataset.k]); render(); break;
-    case 'open-item': { const i=S.wardrobe.find(x=>x.id===id); if(i) openSheet(itemSheet(i)); break; }
+    case 'open-item': { const i=wItem(id); if(i) openSheet(itemSheet(i)); break; }
     case 'del-item': S.wardrobe = S.wardrobe.filter(x=>x.id!==id); save(); closeSheet(); render(); toast('Pièce supprimée'); break;
-    case 'item-mix': { const i=S.wardrobe.find(x=>x.id===id); closeSheet(); S.style=(i.tags&&i.tags[0])||S.style; S.useMine=true;
-      S.locks=S.locks.filter(l=>l.type!==i.type); S.locks.push(i); S.look={label:styleById(S.style).name,styleId:S.style,items:makeVariant(S.style)}; S.fresh=true; S.variant=1; go('cabine'); toast('Tenue créée autour de '+i.name); break; }
-    case 'open-import': S.importSel=[]; openSheet(importSheet()); break;
-    case 'imp-sel': { const k=S.importSel.indexOf(v); k>=0?S.importSel.splice(k,1):S.importSel.push(v); openSheet(importSheet()); break; }
-    case 'imp-go': { const all=MAIL_ORDERS.flatMap(o=>o.items); S.importSel.forEach(key=>{ const i=all.find(x=>x.key===key); S.wardrobe.unshift({id:nid(),type:i.type,name:i.name,color:i.color,tags:i.tags,owned:true}); S.imported.push(key); });
-      const n=S.importSel.length; S.importSel=[]; save(); closeSheet(); render(); toast(`${n} pièce${n>1?'s':''} ajoutée${n>1?'s':''}`); break; }
+    case 'item-mix': { const i=wItem(id); closeSheet(); S.style=(i.tags&&i.tags[0])||S.style;
+      S.locks=S.locks.filter(l=>l.type!==i.type); S.locks.push(i); S.look={label:styleById(S.style).name,styleId:S.style,items:makeVariant(S.style)}; S.fresh=true; S.variant=1; S.pending=false; go('cabine'); toast('Tenue créée autour de '+i.name); break; }
+    case 'lend-toggle': { const i=wItem(id); if(!i) break; i.lendable=!i.lendable; save();
+      if(sheetOpen()) openSheet(itemSheet(i)); render(); toast(i.lendable?'Visible par tes voisins : prêt possible':'Retirée du prêt'); break; }
+    case 'repair': { const i=wItem(id); openSheet(repairSheet(i)); break; }
+    case 'repair-go': { const i=wItem(id); closeSheet(); addImpact('reparations', i?i.type:'top'); render(); toast('Réparation notée : une pièce sauvée'); break; }
+    case 'give': { const i=wItem(id); if(i) openSheet(giveSheet(i)); break; }
+    case 'give-neighbor': case 'give-shop': { const i=wItem(id); if(!i) break; S.wardrobe=S.wardrobe.filter(x=>x.id!==id); addImpact('dons',null,false); closeSheet(); render(); toast(a==='give-shop'?'Merci ! Elle attend sa nouvelle vie à la friperie':'Merci ! Elle est proposée à tes voisins'); break; }
     case 'd-type': S.draft.type=v; openSheet(addSheet()); break;
     case 'd-color': S.draft.color=v; openSheet(addSheet()); break;
     case 'd-cut': S.draft.cutOn=!S.draft.cutOn; openSheet(addSheet()); break;
     case 'd-tag': { const t=S.draft.tags; const k=t.indexOf(v); k>=0?t.splice(k,1):t.push(v); openSheet(addSheet()); break; }
-    case 'confirm-add': { const d=S.draft; S.wardrobe.unshift({id:nid(),type:d.type,name:d.name.trim()||TYPES[d.type],color:d.color,tags:d.tags,img:d.cutOn?d.cut:d.orig,owned:true}); save(); nextDraft(); render(); break; }
+    case 'confirm-add': { const d=S.draft; S.wardrobe.unshift({id:nid(),type:d.type,name:d.name.trim()||TYPES[d.type],color:d.color,tags:d.tags,img:d.cutOn?d.cut:d.orig,owned:true,wornBefore:0}); save(); nextDraft(); render(); break; }
     case 'skip-add': nextDraft(); break;
-    /* Amis */
+    /* Partage */
+    case 'ptab': S.ptab=v; render(); break;
+    case 'troc': S.troc=!S.troc; save(); render(); toast(S.troc?'Noté ! Rappel la veille du troc':'Désinscrit du troc'); break;
+    case 'add-friend-sheet': openSheet(addFriendSheet()); setTimeout(()=>document.getElementById('friendHandle')?.focus(),250); break;
+    case 'open-poll': { const p=S.polls.find(x=>x.id===id); if(p){ S.openPoll=id; openSheet(pollSheet(p)); } break; }
     case 'open-friend': S.openFriend=id; S.friendResult=null; refreshFriendSheet(); break;
     case 'set-share': S.mySharing[id]=v; save(); refreshFriendSheet(); render(); toast(`${friendById(id).name} : ${ACCESS[v].label.toLowerCase()}`); break;
     case 'f-similar': { const f=friendById(id); S.friendResult={fid:id,kind:'similar',data:similarPairs(f)}; refreshFriendSheet(); break; }
@@ -2082,10 +2375,11 @@ document.addEventListener('click', e => {
     case 'accept': { const r=S.requests.find(x=>x.id===id); S.requests=S.requests.filter(x=>x.id!==id); S.friends.unshift(r); S.mySharing[r.id]=S.defaultShare; save(); render(); toast(r.name+' ajouté à tes amis'); break; }
     case 'decline': S.requests=S.requests.filter(x=>x.id!==id); save(); render(); break;
     case 'borrow': { const f=friendById(b.dataset.fid); const i=f?.items.find(x=>x.id===id); if(i){ S.openFriend=null; openSheet(borrowSheet(f,i)); } break; }
+    case 'pickup': b.parentElement.querySelectorAll('.opt').forEach(o=>o.setAttribute('aria-checked', o===b)); break;
     case 'confirm-borrow': { const f=friendById(b.dataset.fid); const i=f.items.find(x=>x.id===id); const until=document.getElementById('loanDate').value||inDays(7);
-      const l={id:'l'+Date.now(),dir:'out',fid:f.id,name:i.name,color:i.color,type:i.type,shape:i.shape,until,status:'pending'}; S.loans.unshift(l); save(); closeSheet(); go('amis'); toast('Demande envoyée à '+f.name);
-      setTimeout(()=>{ l.status='ok'; save(); if(S.tab==='amis' && document.getElementById('sheetWrap').hidden) render(); toast(`${f.name} a accepté de te prêter ${i.name}`); }, 3500); break; }
-    case 'loan-ok': { const l=S.loans.find(x=>x.id===id); l.status='ok'; save(); render(); toast('Prêt accepté, rappel la veille du retour'); break; }
+      const l={id:'l'+Date.now(),dir:'out',fid:f.id,name:i.name,color:i.color,type:i.type,shape:i.shape,until,status:'pending'}; S.loans.unshift(l); S.ptab='amis'; save(); closeSheet(); go('amis'); toast('Demande envoyée à '+f.name);
+      setTimeout(()=>{ l.status='ok'; addImpact('emprunts', i.type); if(S.tab==='amis' && !sheetOpen()) render(); toast(`${f.name} a accepté de te prêter ${i.name}`); }, 3500); break; }
+    case 'loan-ok': { const l=S.loans.find(x=>x.id===id); l.status='ok'; addImpact('prets', l.type); render(); toast('Prêt accepté, rappel la veille du retour'); break; }
     case 'loan-no': { const l=S.loans.find(x=>x.id===id); l.status='no'; save(); render(); break; }
     case 'loan-back': { const l=S.loans.find(x=>x.id===id); l.status='back'; save(); render(); toast('Prêt terminé'); break; }
     case 'close-poll': { const p=S.polls.find(x=>x.id===id); p.open=false; save(); render(); openSheet(pollSheet(p)); break; }
@@ -2099,10 +2393,10 @@ document.addEventListener('click', e => {
       openSheet(groupSheet()); break; }
     case 'g-try': { const me=S.group.result[0]; closeSheet(); tryOn({label:'Groupe '+styleById(S.group.style).name, styleId:S.group.style, items:me.items}); break; }
     /* Moi */
+    case 'impact-how': openSheet(impactSheet()); break;
     case 'default-share': S.defaultShare=v; save(); render(); break;
     case 'open-saved': tryOn(S.saved[+b.dataset.k]); break;
     case 'del-note': S.brandNotes.splice(+b.dataset.k,1); save(); render(); break;
-    case 'del-alert': S.alerts.splice(+b.dataset.k,1); save(); render(); break;
     case 'priv': S.privacy[v]=!S.privacy[v]; save(); render(); break;
     case 'reset': try{localStorage.removeItem(STORE);}catch(err){} location.reload(); break;
     case 'close-sheet': closeSheet(); break;
@@ -2110,13 +2404,12 @@ document.addEventListener('click', e => {
 });
 document.addEventListener('input', e => {
   const t = e.target;
-  if(t.id==='mixRange'){ S.mixRatio=+t.value; document.getElementById('mixLab').textContent = mixLabel(S.mixRatio); }
   if(t.id==='draftName' && S.draft){ S.draft.name = t.value; }
   if(t.id && t.id.startsWith('size-')){ S.sizes[t.id.slice(5)] = t.value; save(); }
 });
 document.addEventListener('change', async e => {
   if(e.target.id==='photoInput' && e.target.files[0]){
-    S.photo = await shrink(await readFile(e.target.files[0]), 900); save(); render(); toast('Photo ajoutée. Choisis un style puis génère.');
+    S.photo = await shrink(await readFile(e.target.files[0]), 900); save(); render(); toast('Photo ajoutée. Choisis un style puis cherche.');
   }
   if(e.target.id==='avatarInput' && e.target.files[0]){
     S.avatar = await squareCrop(await readFile(e.target.files[0]), 256); save(); render(); toast('Photo de profil mise à jour');
@@ -2141,8 +2434,8 @@ document.addEventListener('submit', e => {
   }
   if(e.target.id==='budgetForm'){
     const v = Math.round(+document.getElementById('budgetMax').value);
-    if(!v || v<20){ toast('Indique un montant d\'au moins 20 €'); return; }
-    S.budgetMax = Math.min(v,5000); applyBudget(); return;
+    if(!v || v<5){ toast('Indique un montant d\'au moins 5 €'); return; }
+    S.budgetMax = Math.min(v,1000); applyBudget(); return;
   }
   if(e.target.id==='addNote'){
     const br=document.getElementById('noteBrand').value.trim(), nt=document.getElementById('noteText').value.trim();
@@ -2150,7 +2443,7 @@ document.addEventListener('submit', e => {
     S.brandNotes.push({brand:br,note:nt}); save(); render();
   }
 });
-document.addEventListener('keydown', e => { if(e.key==='Escape' && !document.getElementById('sheetWrap').hidden) closeSheet(); });
+document.addEventListener('keydown', e => { if(e.key==='Escape' && sheetOpen()) closeSheet(); });
 
 /* Votes simulés des amis sur les sondages ouverts */
 setInterval(()=>{
@@ -2167,8 +2460,8 @@ setInterval(()=>{
 function renderIntro(){
   const el = document.getElementById('intro'); if(!el) return;
   const h = new Date().getHours(), hello = h<6 ? 'Bonne nuit' : h<12 ? 'Bonjour' : h<18 ? 'Bon après-midi' : 'Bonsoir';
-  const looks = [{l:'Streetwear',i:buildLook('streetwear',2,null,null)},{l:'Old Money',i:buildLook('oldmoney',2,null,null)},{l:'Y2K',i:buildLook('y2k',2,null,null)},{l:'Soirée',i:buildLook('soiree',2,null,null)}];
-  const w = WEATHER[S.weather], ev = AGENDA.find(a=>a.occasion===S.occasion) || AGENDA[0];
+  const looks = [{l:'Streetwear',i:buildLook('streetwear')},{l:'Old Money',i:buildLook('oldmoney')},{l:'Vintage',i:buildLook('vintage')},{l:'Soirée',i:buildLook('soiree')}];
+  const w = WEATHER[S.weather];
   const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
   el.innerHTML = `<div class="blob a"></div><div class="blob b"></div>
     <button class="icon-btn intro-theme" id="introTheme" data-action="theme" aria-label="Changer de thème">${S.theme==='dark'?I.sun:I.moon}</button>
@@ -2176,17 +2469,18 @@ function renderIntro(){
       <div class="intro-top">
         <div class="hello">${hello}</div>
         <div class="big-logo" aria-label="Tenu">${['T','e','n','u'].map((c,k)=>`<span><i style="animation-delay:${.35+k*.08}s">${c}</i></span>`).join('')}<span class="dot"><i>.</i></span></div>
-        <p class="tagline">Ton dressing, ton style, tes tenues. En un geste.</p>
+        <p class="tagline">Le plus beau vêtement est celui qui existe déjà.</p>
+        <div class="trio"><span>Porter</span><i></i><span>Partager</span><i></i><span>Faire durer</span></div>
       </div>
       <div class="intro-stage" aria-hidden="true">${looks.map(x=>avatar(sortItems(x.i))).join('')}<div class="intro-label">${looks.map(x=>`<b>${x.l}</b>`).join('')}</div></div>
       <div class="intro-bottom">
         <div class="today-chips">
           <span>${I.today}${new Date().toLocaleDateString(LOC(),{weekday:'short',day:'numeric',month:'short'})}</span>
           <span>${I[WX_ICON[S.weather]]}${w.t}° · ${w.label}</span>
-          <span>${I.dressing}${ev.time} · ${esc(ev.title)}</span>
+          <span class="eco-chip">${I.leaf}≈ ${Math.round(S.impact.co2)} kg CO₂e évités</span>
         </div>
         <button class="start" data-action="start" data-v="today"><span class="t"><b>Démarrer</b><small>Voir ma tenue du jour</small></span><span class="arr">${arrow}</span></button>
-        <button class="skip" data-action="start" data-v="cabine">Essayer un style directement</button>
+        <button class="skip" data-action="start" data-v="quartier">Voir ce qu'on se prête dans le quartier</button>
       </div>
     </div>`;
   translateDOM(el);
@@ -2194,6 +2488,7 @@ function renderIntro(){
 }
 function leaveIntro(tab){
   const el = document.getElementById('intro'); if(!el || el.classList.contains('leaving')) return;
+  if(tab==='quartier'){ S.ptab='quartier'; tab='amis'; }
   el.classList.add('leaving');
   document.documentElement.classList.remove('intro-open');
   S.tab = tab; render({launch:true}); window.scrollTo({top:0});
@@ -2210,7 +2505,7 @@ window.addEventListener('pagehide', saveNow);
 /* ================= Démarrage ================= */
 load();
 S.variant = 1;
-S.look = {label:'Streetwear', styleId:'streetwear', items: buildLook('streetwear')};
+S.look = {label:'Streetwear', styleId:'streetwear', items: makeVariant('streetwear')};
 S.outfits = makeOutfits();
 render();
 renderIntro();
